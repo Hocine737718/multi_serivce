@@ -43,7 +43,7 @@ nav {
 .nav_close {
     opacity: 0;
 }
-@media screen and (max-width: 1118px) {
+@media screen and (max-width: 1169px) {
     .nav_menu {
       position: absolute;
       left: 0;
