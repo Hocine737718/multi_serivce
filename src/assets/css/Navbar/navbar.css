@@ -1,0 +1,140 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--black-color);
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+    z-index: var(--z-fixed);
+}
+nav {
+    height: var(--header-height);
+} 
+.nav_burger, 
+.nav_close {
+    color: var(--white-color);
+}
+.nav_data {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}  
+.nav_logo img {
+    width: 150px;
+    height: auto;
+}  
+.nav_toggle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}  
+.nav_burger, 
+.nav_close {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset: 0;
+    margin: auto;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: opacity .1s, transform .4s;
+}  
+.nav_close {
+    opacity: 0;
+}
+@media screen and (max-width: 1118px) {
+    .nav_menu {
+      position: absolute;
+      left: 0;
+      top: 2.5rem;
+      width: 100%;
+      height: calc(100vh - 3.5rem);
+      overflow: auto;
+      pointer-events: none;
+      opacity: 0;
+      transition: top .4s, opacity .3s;
+    }
+    .nav_menu::-webkit-scrollbar {
+      width: 0;
+    }
+    .nav_list {
+      background-color: var(--black-color);
+      padding-top: 1rem;
+    }
+}
+.nav_link {
+    color: var(--white-color);
+    background-color: var(--black-color);
+    font-weight: var(--font-semi-bold);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color .3s;
+}  
+.nav_link:hover {
+    background-color: var(--black-color-light);
+}
+.show-menu {
+    opacity: 1;
+    top: 3.5rem;
+    pointer-events: initial;
+}
+.show-icon .nav_burger {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+.show-icon .nav_close {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+.dropdown_item {
+    cursor: pointer;
+}  
+.dropdown_arrow {
+    font-size: 1.25rem;
+    font-weight: initial;
+    transition: transform .4s;
+}  
+.dropdown_link, 
+.dropdown_sublink {
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+    color: var(--white-color);
+    background-color: var(--black-color-light);
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-weight: var(--font-regular);
+    transition: background-color .3s;
+}  
+.dropdown_link i, 
+.dropdown_sublink i {
+    font-size: 1.25rem;
+    font-weight: initial;
+}  
+.dropdown_link:hover, 
+.dropdown_sublink:hover {
+    background-color: var(--black-color);
+}  
+.dropdown_menu, 
+.dropdown_submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-out;
+    min-width: 250px;
+}
+.dropdown_item:hover .dropdown_menu, 
+.dropdown_subitem:hover > .dropdown_submenu {
+    max-height: 1000px;
+    transition: max-height .4s ease-in;
+}
+.dropdown_item:hover .dropdown_arrow {
+    transform: rotate(180deg);
+}
+.dropdown_add {
+    margin-left: auto;
+}  
+.dropdown_sublink {
+    background-color: var(--black-color-lighten);
+}
