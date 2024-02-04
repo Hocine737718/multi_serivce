@@ -1,17 +1,17 @@
 <template>
     <div class="services_card">
         <div class="card_icon">
-            <i class="ri-pencil-fill"></i>
+            <i :class="icon"></i>
         </div>
         <div class="card_content">
             <div class="card_content_header">
-                Conseil
+                 {{header}}
             </div>
             <div class="card_content_body">
-                Le cabinet Global Management Services, met à votre disposition des juristes expérimenté pour vous conseillez et vous accompagnez afin de veiller à votre sécurité judiciaire.
+                {{body}}
             </div>
             <div class="card_content_footer">
-                <a href="#">Plus</a>
+                <a :href="footer">Plus</a>
             </div>
         </div>
     </div>
@@ -20,5 +20,6 @@
 <script>
 export default {
     name: 'CardServiceCmp',
+    props:['icon','header','body','footer']
 }
 </script>

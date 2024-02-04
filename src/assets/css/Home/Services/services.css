@@ -23,7 +23,7 @@
 .services_cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+    align-items: top;
     column-gap: 1rem;
     padding: 2rem;
 }
@@ -64,13 +64,13 @@
     font-size: 1rem; 
 }
 .card_content_header{
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bolder;
-    text-transform: uppercase;
     width: 100%;
 }
 .card_content_body{
     line-height: 1.5rem;
+    font-weight: bolder;
     color: white;
 }
 .card_content_footer{

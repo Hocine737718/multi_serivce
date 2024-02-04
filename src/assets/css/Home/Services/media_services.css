@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
     .home_services {
         padding: 3rem 1rem;
         row-gap: 1rem;
@@ -10,9 +10,6 @@
         column-gap: 0.5rem;
         padding: 0;
     }
-    .card_content_header{
-        font-size: 1.5rem;
-    }    
 }
 @media screen and (max-width: 900px) {
     .services_cards{
@@ -27,7 +24,7 @@
         padding: 3rem;
     }
     .card_content_header{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }  
 }
 @media screen and (max-width: 491px) {
@@ -51,6 +48,6 @@
         font-size: 0.9rem; 
     }
     .card_content_header{
-        font-size: 1.35rem;
+        font-size: 1rem;
     }   
 }
