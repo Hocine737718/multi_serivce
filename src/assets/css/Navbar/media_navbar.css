@@ -1,5 +1,5 @@
 @media screen and (max-width: 340px) {
-    .container {
+  .nav .container {
       margin-inline: 1rem;
     }
   
@@ -9,7 +9,7 @@
 }
   
 @media screen and (min-width: 1170px) {
-   .container {
+   .nav .container {
       margin-inline: auto;
     }
   

@@ -16,7 +16,7 @@
     --z-fixed: 100;
 
     --font-regular: 400;
-    --font-semi-bold: 600;
+    --font-semi-bold: 700;
 
     --normal-font-size: .938rem;
 }
@@ -34,7 +34,12 @@ ul {
     list-style: none;
 }
 a {
+    color: inherit;
     text-decoration: none;
+    cursor: pointer;
+}
+h1, h2, h3, h4, h5{
+    line-height: 1.5;
 }
 .container {
     max-width: 1120px;
