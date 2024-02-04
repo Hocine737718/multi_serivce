@@ -22,9 +22,6 @@
     }
 }
 @media screen and (max-width: 994px) {
-    .footer{
-        padding: 5rem 0;
-    }
     .footer_info{
         font-size: 0.65rem;
     }
@@ -118,28 +115,3 @@
         font-size: 0.75rem;
     }           
 }
-/*
-@media screen and (max-width: 913px) {
-    .footer_info{
-        font-size: 0.65rem;
-    }
-    .footer_info i{
-        font-size: 0.65rem;
-    }
-    .footer_links{
-        font-size: 0.65rem;
-    }
-}
-@media screen and (max-width: 800px) {
-    .footer{
-        padding: 4rem 0;
-    }
-    .footer_container{
-        width: 60%;
-        margin: 0 3rem;
-    }
-    .footer_first_row{
-        grid-template-columns: 1fr;
-        row-gap: 1.5rem;
-    }    
-}*/
