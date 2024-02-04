@@ -53,6 +53,9 @@ input, button{
 }
 button{
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 .container {
     max-width: 1120px;
