@@ -9,5 +9,7 @@ import './assets/css/Footer/footer.css'
 import './assets/css/Footer/media_footer.css'
 import './assets/css/Home/home.css'
 import './assets/css/Home/media_home.css'
+import './assets/css/Home/Services/services.css'
+import './assets/css/Home/Services/media_services.css'
 
 createApp(App).use(router).mount('#app')
