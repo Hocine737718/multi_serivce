@@ -31,6 +31,7 @@
     margin: 0;
 } 
 body {
+    margin-top: var(--header-height);
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -45,6 +46,13 @@ a {
 }
 h1, h2, h3, h4, h5{
     line-height: 1.5;
+}
+input, button{
+    border: none;
+    outline: none;
+}
+button{
+    cursor: pointer;
 }
 .container {
     max-width: 1120px;

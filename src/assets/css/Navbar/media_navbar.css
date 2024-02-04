@@ -14,7 +14,7 @@
     }
   
     .nav {
-      height: calc(var(--header-height) + 2rem);
+      height: var(--header-height);
       display: flex;
       justify-content: space-between;
     }
@@ -71,7 +71,7 @@
     /* Show dropdown menu */
     .dropdown_item:hover .dropdown_menu {
       opacity: 1;
-      top: 5.5rem;
+      top: 3.5rem;
       pointer-events: initial;
       transition: top .3s;
     }
