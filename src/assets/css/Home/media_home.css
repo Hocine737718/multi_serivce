@@ -1,0 +1,65 @@
+@media screen and (max-width: 819px) {
+    .signup_box:hover > .signup_input,.signup_input:focus{
+        width: 300px;
+        padding: 1.5rem;
+    }
+    .signup_input{
+        font-size: 1rem;
+    }
+    .signup_box i{
+        font-size: 2.75rem;
+        padding: 1.5rem 0;
+    }
+    .signup_btn{
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+    .home_signup h1{
+        font-size: 1.5rem;
+    }    
+}
+@media screen and (max-width: 554px) {
+    .signup_box:hover > .signup_input,.signup_input:focus{
+        width: 200px;
+        padding: 1rem;
+    }
+    .signup_input{
+        font-size: 0.75rem;
+    }
+    .signup_box i{
+        font-size: 2.75rem;
+        padding: 1rem 0;
+    }
+    .signup_btn{
+        padding: 1rem;
+        font-size: 0.75rem;
+    }
+    .home_signup h1{
+        font-size: 1.25rem;
+    }    
+}
+@media screen and (max-width: 421px) {
+    .signup_box:hover > .signup_input,.signup_input:focus{
+        width: 170px;
+        padding: 0.75rem;
+    }
+    .signup_input{
+        font-size: 0.75rem;
+    }
+    .signup_box i{
+        font-size: 2.75rem;
+        padding: 0.5rem 0;
+    }
+    .signup_btn{
+        padding: 1rem;
+        font-size: 0.75rem;
+    }
+    .home_signup h1{
+        font-size: 1rem;
+    }    
+}
+@media screen and (max-width: 391px) {
+    .signup_form {
+        padding: 3rem 0.5rem;
+    } 
+}

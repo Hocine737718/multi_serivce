@@ -24,7 +24,7 @@
     align-items: center;    
 }
 .signup_box{
-    height: 40px;
+    height: 48px;
     justify-content: center;
     display: flex;
 }
@@ -42,7 +42,7 @@
     font-size: 1.5rem;
 }
 .signup_box:hover > .signup_input,.signup_input:focus{
-    width: 700px;
+    width: 500px;
     padding: 2rem;
 }
 .signup_btn{
