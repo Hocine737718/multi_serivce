@@ -74,7 +74,9 @@
     color: white;
 }
 .card_content_footer{
-    text-decoration: underline;
     color: blue;
     width: 100%;
+}
+.card_content_footer:hover{
+    text-decoration: underline;
 }
