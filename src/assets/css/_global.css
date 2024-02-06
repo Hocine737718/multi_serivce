@@ -9,8 +9,10 @@
 
     --first-color:#7D0A0A;
     --first-color-light:#BF3131;
+    --first-color-lighten:#f02020;
     --second-color:#EAD196;
     --second-color-light:#F3EDC8;
+    --third-color:#ffff00;
 
     --white-color: #fff;
     --body-color: hsl(220, 100%, 97%);

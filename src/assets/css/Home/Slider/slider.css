@@ -1,0 +1,93 @@
+.home_slider{
+    height: 400px;
+    --swiper-theme-color: var(--first-color-light);
+}
+.swiper, .slider_article{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../img/bg/bg-office.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.article1{
+    background-image: url("../../../img/bg/bg-3.jpg");
+}
+.article2{
+    background-image: url("../../../img/bg/bg-2.jpg");
+}
+.article3{
+    background-image: url("../../../img/bg/bg-1.jpg");
+}
+.slider_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 50px;
+    background-color: rgba(0,0,0,0.6); 
+    height: 100%;
+    width: 100%;
+}
+.slider_button{
+    width:200px;
+    height:40px;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: solid 2px red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color:  rgba(0,0,0,0); 
+    border-radius: 10px;
+    padding: 20px;
+    color: whitesmoke;
+    text-align: center;
+}
+.slider_button:hover{
+    color: black;
+    border-color: black;
+    background-color: var(--first-color-lighten);
+}
+.slider_titles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;   
+    background-color: rgba(0,0,0,0.7); 
+    height: 100%;
+    width: 100%;
+}
+.article3 .slider_titles{
+    background-color: rgba(0,0,0,0.6); 
+}
+.slider_first_title{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--third-color);
+}
+.slider_second_title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: whitesmoke;
+}
+.slider_button2{
+    width:200px;
+    height:40px;
+    font-size: 1rem;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0);
+    color: rgb(231, 40, 40);
+}
+.slider_button2:hover{
+    opacity:0.75;
+    text-decoration: underline;
+}
