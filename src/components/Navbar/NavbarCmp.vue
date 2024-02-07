@@ -14,16 +14,16 @@
     <div class="nav_menu" id="nav-menu">
       <ul class="nav_list">
         <li>
-          <a href="#" class="nav_link">Accueil</a>
+          <a href="/" class="nav_link">Accueil</a>
         </li>
 
         <li class="dropdown_item">
-          <div class="nav_link">
+          <a href="about" class="nav_link">
             Qui sommes-nous <i class="ri-arrow-down-s-line dropdown_arrow"></i>
-          </div>
+          </a>
           <ul class="dropdown_menu">
             <li>
-              <a href="#" class="dropdown_link">
+              <a href="about" class="dropdown_link">
                 Présentation
               </a>
             </li>

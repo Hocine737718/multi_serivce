@@ -15,6 +15,8 @@ import './assets/css/Home/Slider/slider.css'
 import './assets/css/Home/Slider/media_slider.css'
 import './assets/css/Home/Services/services.css'
 import './assets/css/Home/Services/media_services.css'
+import './assets/css/About/about.css'
+import './assets/css/About/media_about.css'
 import './assets/css/ScrollUp/scrollup.css'
 
 //import './assets/js/swiper-bundle.min.js'
