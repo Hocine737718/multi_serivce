@@ -1,6 +1,30 @@
 .home{
     margin-top: var(--header-height);
 }
+
+.home_about {
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: justify;
+    background-color: white;
+    line-height: 25px;
+    row-gap: 25px;
+    font-weight: 700;
+}
+.about_h_title{
+    font-size: 2rem;
+    color: red;
+    font-weight: 700;
+}
+.home_about a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
 .home_signup{
     color: #fff;
     padding: 1.5rem 0 1.5rem;

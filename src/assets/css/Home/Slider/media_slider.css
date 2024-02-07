@@ -2,12 +2,6 @@
     .home_slider{
         height: 300px;
     } 
-    /*.slider_button{
-        width:200px;
-        height:40px;
-        font-size: 1rem;
-        padding: 20px;
-    }*/ 
     .slider_first_title{
         font-size: 2rem;
     }
@@ -15,16 +9,10 @@
         font-size: 1rem;
     }
     .slider_button2{
-        /*width:200px;
-        height:40px;*/
         font-size: 0.85rem;
     }  
 }
 @media screen and (max-width: 837px) {
-    /*.home_slider{
-        height: 300px;
-        --swiper-navigation-size: 22px;
-    }*/
     .slider_button{
         width:160px;
         height:40px;
