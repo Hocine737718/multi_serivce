@@ -2,8 +2,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-//import './assets/css/swiper-bundle.min.css'
-
 import './assets/css/_global.css'
 import './assets/css/Navbar/navbar.css'
 import './assets/css/Navbar/media_navbar.css'
@@ -18,8 +16,5 @@ import './assets/css/Home/Services/media_services.css'
 import './assets/css/About/about.css'
 import './assets/css/About/media_about.css'
 import './assets/css/ScrollUp/scrollup.css'
-
-//import './assets/js/swiper-bundle.min.js'
-//import './assets/js/slider.js'
 
 createApp(App).use(router).mount('#app')

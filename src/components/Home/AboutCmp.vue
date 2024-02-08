@@ -1,5 +1,5 @@
 <template>
-    <div class="home_about">
+    <div class="home_about" id="home_about">
         <div class="about_h_title">
             Qui sommes-nous
         </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="home_signup">
+    <div class="home_signup" id="home_signup">
         <h1>Inscrivez vous à la newsletter</h1>
         <form :action="actionURL" method="POST" class="signup_form" >
             <div class="signup_box">

@@ -19,6 +19,7 @@
     font-size: 2rem;
     color: red;
     font-weight: 700;
+    text-transform: uppercase;
 }
 .home_about a:hover{
     color: blue;

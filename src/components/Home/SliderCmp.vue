@@ -1,5 +1,5 @@
 <template>
-    <div class="home_slider">
+    <div class="home_slider" id="home_slider">
         <swiper
             :modules="modules"
             :slides-per-view="1"

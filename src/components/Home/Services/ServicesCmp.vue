@@ -1,5 +1,5 @@
 <template>
-    <div class="home_services">
+    <div class="home_services" id="home_services">
         <div class="services_header">
             <span>SERVICES</span>
             <h2>Comment pouvons-nous vous aider ?</h2>
