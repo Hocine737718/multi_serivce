@@ -1,4 +1,5 @@
 .home_services{
+    min-height: calc(100vh - var(--header-height));
     padding: 3rem;
     display: flex;
     flex-direction: column;

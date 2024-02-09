@@ -1,5 +1,5 @@
 .home_slider{
-    height: 400px;
+    height: calc(100vh - var(--header-height));
     --swiper-theme-color: var(--first-color-light);
 }
 .swiper, .slider_article{

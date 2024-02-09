@@ -1,7 +1,4 @@
 @media screen and (max-width: 1115px) {
-    .home_slider{
-        height: 300px;
-    } 
     .slider_first_title{
         font-size: 2rem;
     }
@@ -52,10 +49,7 @@
         font-size: 0.65rem;
     }  
 }
-@media screen and (max-width: 421px) {
-    .home_slider{
-        height: 250px;
-    } 
+@media screen and (max-width: 421px) { 
     .slider_titles {
         row-gap: 10px;
     }

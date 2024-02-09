@@ -5,9 +5,9 @@
                 <div class="footer_col">
                     <h2>GMS-Logo</h2>
                     <div class="footer_socials">
-                        <a href="#"><i class="ri-facebook-box-fill"></i></a>
-                        <a href="#"><i class="ri-instagram-fill"></i></a>
-                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="https://www.facebook.com/"><i class="ri-facebook-box-fill"></i></a>
+                        <a href="https://www.instagram.com/"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://twitter.com/"><i class="ri-twitter-x-fill"></i></a>
                     </div>
                 </div>
                 <div class="footer_col">
@@ -30,21 +30,19 @@
                 <div class="footer_col">
                     <h2>Liens Utiles</h2>
                     <div class="footer_links">
-                        <a href="#">Droit de travail</a><br>
-                        <a href="#">Droit de la sécurité sociale</a><br>
-                        <a href="#">Fiscalité salariale </a><br>
-                        <a href="#">L'audit de l'administration RH</a><br>
-                        <a href="#">Administration des ressources humaines</a><br>
+                        <a href="/article/droit-travail">Droit de travail</a><br>
+                        <a href="/article/droit-securite-sociale">Droit de la sécurité sociale</a><br>
+                        <a href="/article/fiscalite-salariale">Fiscalité salariale </a><br>
+                        <a href="/article/audit">L'audit de l'administration RH</a><br>
                     </div>
                 </div>
                 <div class="footer_col">
                     <h2>Raccourcis</h2>
                     <div class="footer_links">
-                        <a href="#">Accueil</a><br>
-                        <a href="#">Qui sommes nous</a><br>
-                        <a href="#">Formations</a><br>
-                        <a href="#">Téléchargement</a><br>
-                        <a href="#">Contact</a><br>
+                        <a href="/">Accueil</a><br>
+                        <a href="/qui-somme-nous">Qui sommes nous</a><br>
+                        <a href="/article/formation">Formations</a><br>
+                        <a href="/contact">Contact</a><br>
                     </div>
                 </div>
             </div>

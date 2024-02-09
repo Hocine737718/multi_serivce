@@ -20,17 +20,17 @@
                         <div class="slider_second_title">
                             Expertise - Disponibilité - Assistance - Solutions
                         </div>
-                        <div class="slider_button2">
+                        <a href="/qui-somme-nous" class="slider_button2">
                             DECOUVREZ GMS
-                        </div>
+                        </a>
                     </div>
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="slider_article article1">
                     <div class="slider_buttons">
-                        <div class="slider_button"><a href="#">Audit gratuit</a></div>
-                        <div  class="slider_button"><a href="#">Demandez un devis</a></div>                        
+                        <div class="slider_button"><a href="/audit">Audit gratuit</a></div>
+                        <div  class="slider_button"><a href="/devis">Demandez un devis</a></div>                        
                     </div>
                 </div>
             </swiper-slide>
@@ -43,9 +43,9 @@
                         <div class="slider_second_title">
                             Assistance Administrative - Assistance Juridique - Audit de Conformité & de Performace
                         </div>
-                        <div class="slider_button2">
+                        <a href="/qui-somme-nous" class="slider_button2">
                             LIRE PLUS
-                        </div>
+                        </a>
                     </div>
                 </div>
             </swiper-slide>            
