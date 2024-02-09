@@ -3,7 +3,7 @@
 }
 
 .home_about {
-    height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header-height));
     padding: 3rem 4rem;
     display: flex;
     flex-direction: column;
