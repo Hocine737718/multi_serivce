@@ -4,12 +4,15 @@ import AboutView from '@/views/AboutView.vue'
 import WorkLawView from '@/views/Articles/WorkLawView.vue'
 import SocialSecurityLawView from '@/views/Articles/SocialSecurityLawView.vue' 
 import SalaryView from '@/views/Articles/SalaryView.vue' 
-import AuditView from '@/views/Articles/AuditView.vue' 
+import AuditComplianceView from '@/views/Articles/AuditComplianceView.vue' 
 import WorkPermitView from '@/views/Articles/WorkPermitView';
 import PersonnelView from '@/views/Articles/PersonnelView.vue';
 import PayrollView from '@/views/Articles/PayrollView.vue';
 import CorrespondenceView from '@/views/Articles/CorrespondenceView.vue';
 import FormationView from '@/views/Articles/FormationView.vue'
+import AuditRhView from '@/views/Articles/AuditRhView.vue'
+import AdminRhView from '@/views/Articles/AdminRhView.vue'
+import CounselView from '@/views/Articles/CounselView.vue'
 
 const routes = [
   {
@@ -38,9 +41,19 @@ const routes = [
     component: SalaryView
   },
   {
-    path: '/article/audit',
-    name: 'audit',
-    component: AuditView
+    path: '/article/audit-conformite',
+    name: 'audit-conformite',
+    component: AuditComplianceView
+  } ,
+  {
+    path: '/article/audit-rh',
+    name: 'audit-rh',
+    component: AuditRhView
+  } ,  
+  {
+    path: '/article/admin-rh',
+    name: 'admin-rh',
+    component: AdminRhView
   } ,
   {
     path: '/article/permis-travail',
@@ -66,6 +79,11 @@ const routes = [
     path: '/article/formation',
     name: 'formation',
     component: FormationView
+  },
+  {
+    path: '/article/conseil',
+    name: 'conseil',
+    component: CounselView
   }
 ]
 

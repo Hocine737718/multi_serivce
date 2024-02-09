@@ -31,6 +31,6 @@
 </template>
 <script>
 export default {
-    name:"AuditView"
+    name:"AuditComplianceView"
 }
 </script>

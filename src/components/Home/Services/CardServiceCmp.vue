@@ -1,8 +1,8 @@
 <template>
     <div class="services_card">
-        <div class="card_icon">
+        <a :href="lien" class="card_icon">
             <i :class="icon"></i>
-        </div>
+        </a>
         <div class="card_content">
             <div class="card_content_header">
                  {{header}}
@@ -11,7 +11,7 @@
                 {{body}}
             </div>
             <div class="card_content_footer">
-                <a :href="footer">Plus</a>
+                <a :href="lien">Plus</a>
             </div>
         </div>
     </div>
@@ -20,6 +20,6 @@
 <script>
 export default {
     name: 'CardServiceCmp',
-    props:['icon','header','body','footer']
+    props:['icon','header','body','lien']
 }
 </script>

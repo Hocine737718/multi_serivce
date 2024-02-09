@@ -41,9 +41,9 @@
           </div>
           <ul class="dropdown_menu">
             <li class="dropdown_subitem">
-              <div class="dropdown_link">
+              <a href="/article/conseil" class="dropdown_link">
                 Conseil <i class="ri-add-line dropdown_add"></i>
-              </div>
+              </a>
               <ul class="dropdown_submenu">
                 <li>
                   <a href="/article/droit-travail" class="dropdown_sublink">
@@ -69,12 +69,12 @@
             </li>
 
             <li class="dropdown_subitem">
-              <div class="dropdown_link">
+              <a href="/article/audit-rh" class="dropdown_link">
                 Audit de l'administration RH  <i class="ri-add-line dropdown_add"></i>
-              </div>
+              </a>
               <ul class="dropdown_submenu">
                 <li>
-                  <a href="/article/audit" class="dropdown_sublink">
+                  <a href="/article/audit-conformite" class="dropdown_sublink">
                     Audit de conformité et d’efficacité
                   </a>
                 </li>
@@ -82,9 +82,9 @@
             </li>
 
             <li class="dropdown_subitem">
-              <div class="dropdown_link">
+              <a href="/article/admin-rh" class="dropdown_link">
                 Administration RH  <i class="ri-add-line dropdown_add"></i>
-              </div>
+              </a>
               <ul class="dropdown_submenu">
                 <li>
                   <a href="/article/gestion-personnel" class="dropdown_sublink">
