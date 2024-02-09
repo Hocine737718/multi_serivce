@@ -18,23 +18,18 @@
         </li>
 
         <li class="dropdown_item">
-          <a href="about" class="nav_link">
+          <a href="/qui-somme-nous" class="nav_link">
             Qui sommes-nous <i class="ri-arrow-down-s-line dropdown_arrow"></i>
           </a>
           <ul class="dropdown_menu">
             <li>
-              <a href="about" class="dropdown_link">
+              <a href="/qui-somme-nous" class="dropdown_link">
                 Présentation
               </a>
             </li>
             <li>
-              <a href="#" class="dropdown_link">
-                Nos références
-              </a>
-            </li>
-            <li>
-              <a href="#" class="dropdown_link">
-                GMS en chiffres 
+              <a href="/statistique" class="dropdown_link">
+                Statistiques
               </a>
             </li>
           </ul>
@@ -51,22 +46,22 @@
               </div>
               <ul class="dropdown_submenu">
                 <li>
-                  <a href="#" class="dropdown_sublink">
+                  <a href="/article/droit-travail" class="dropdown_sublink">
                     Droit de travail
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown_sublink">
+                  <a href="/article/droit-securite-sociale" class="dropdown_sublink">
                     Droit de la sécurité sociale
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown_sublink">
+                  <a href="/article/fiscalite-salariale" class="dropdown_sublink">
                     Fiscalité salariale
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown_sublink">
+                  <a href="/article/optimisation-salariale" class="dropdown_sublink">
                     Optimisation salariale
                   </a>
                 </li>
@@ -79,7 +74,7 @@
               </div>
               <ul class="dropdown_submenu">
                 <li>
-                  <a href="#" class="dropdown_sublink">
+                  <a href="/article/audit" class="dropdown_sublink">
                     Audit de conformité et d’efficacité
                   </a>
                 </li>
@@ -92,22 +87,22 @@
               </div>
               <ul class="dropdown_submenu">
                 <li>
-                  <a href="#" class="dropdown_sublink">
+                  <a href="/article/gestion-personnel" class="dropdown_sublink">
                     Gestion Du Personel
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown_sublink">
+                  <a href="/article/gestion-paie" class="dropdown_sublink">
                     Gestion De La Paie
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown_sublink">
+                  <a href="/article/correspondance-sociale" class="dropdown_sublink">
                     Correspondance sociale
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown_sublink">
+                  <a href="/article/permis-travail" class="dropdown_sublink">
                     Permis de travail 
                   </a>
                 </li>
@@ -115,7 +110,7 @@
             </li>
 
             <li class="dropdown_subitem">
-              <a href="#" class="dropdown_link">
+              <a href="/article/formation" class="dropdown_link">
                 Formation 
               </a>
             </li>
@@ -128,12 +123,12 @@
           </div>
           <ul class="dropdown_menu">
             <li>
-              <a href="#" class="dropdown_link">
+              <a href="/offre-emploi" class="dropdown_link">
                 Offre d'emploi
               </a>
             </li>
             <li>
-              <a href="#" class="dropdown_link">
+              <a href="/candidature-spontanee" class="dropdown_link">
                 Candidature spontanée
               </a>
             </li>
@@ -146,25 +141,24 @@
           </div>
           <ul class="dropdown_menu">
             <li>
-              <a href="#" class="dropdown_link">
+              <a href="/telechargement/droit-travail" class="dropdown_link">
                 Droit de Travail
               </a>
             </li>
             <li>
-              <a href="#" class="dropdown_link">
+              <a href="/telechargement/droit-securite-sociale" class="dropdown_link">
                 Droit de la securite sociale
               </a>
             </li>
             <li>
-              <a href="#" class="dropdown_link">
+              <a href="/telechargement/seminaires" class="dropdown_link">
                 Séminaires
               </a>
             </li>
           </ul>
         </li>
-
         <li>
-          <a href="#" class="nav_link">Contact</a>
+          <a href="/contact" class="nav_link">Contact</a>
         </li>
       </ul>
     </div>

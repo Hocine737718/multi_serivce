@@ -15,6 +15,8 @@ import './assets/css/Home/Services/services.css'
 import './assets/css/Home/Services/media_services.css'
 import './assets/css/About/about.css'
 import './assets/css/About/media_about.css'
+import './assets/css/Article/article.css'
+import './assets/css/Article/media_article.css'
 import './assets/css/ScrollUp/scrollup.css'
 
 createApp(App).use(router).mount('#app')
