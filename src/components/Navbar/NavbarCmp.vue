@@ -28,7 +28,7 @@
               </a>
             </li>
             <li>
-              <a href="/statistique" class="dropdown_link">
+              <a href="/statistiques" class="dropdown_link">
                 Statistiques
               </a>
             </li>

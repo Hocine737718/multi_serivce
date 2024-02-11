@@ -33,7 +33,7 @@
                         <a href="/article/droit-travail">Droit de travail</a><br>
                         <a href="/article/droit-securite-sociale">Droit de la sécurité sociale</a><br>
                         <a href="/article/fiscalite-salariale">Fiscalité salariale </a><br>
-                        <a href="/article/audit">L'audit de l'administration RH</a><br>
+                        <a href="/article/audit-rh">L'audit de l'administration RH</a><br>
                     </div>
                 </div>
                 <div class="footer_col">

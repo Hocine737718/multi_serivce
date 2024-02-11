@@ -13,7 +13,7 @@ import FormationView from '@/views/Articles/FormationView.vue'
 import AuditRhView from '@/views/Articles/AuditRhView.vue'
 import AdminRhView from '@/views/Articles/AdminRhView.vue'
 import CounselView from '@/views/Articles/CounselView.vue'
-
+import StatisticsView from '@/views/StatisticsView.vue'
 const routes = [
   {
     path: '/',
@@ -84,7 +84,12 @@ const routes = [
     path: '/article/conseil',
     name: 'conseil',
     component: CounselView
-  }
+  },
+  {
+    path: '/statistiques',
+    name: 'statistiques',
+    component: StatisticsView
+  },
 ]
 
 const router = createRouter({
