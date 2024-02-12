@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about" id="about">
     <span class="about_back">
     <div class="about_header">
       <div class="about_title">
@@ -50,9 +50,18 @@
 
 <script>
 import $ from 'jquery';
+import ScrollReveal from 'scrollreveal';
 export default {
   name:'AboutView',
   mounted(){
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    })
+    sr.reveal(`#about`);
+    
     $(function() {
         $('.about_nav_item').on('click', function(event) {
             var $anchor = $(this);

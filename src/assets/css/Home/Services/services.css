@@ -1,9 +1,9 @@
 .home_services{
     min-height: calc(100vh - var(--header-height));
-    padding: 3rem;
+    padding: 5rem 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-image: url("../../../img/bg/bg-office.png");
     background-size: cover;
@@ -81,3 +81,4 @@
 .card_content_footer:hover{
     text-decoration: underline;
 }
+  

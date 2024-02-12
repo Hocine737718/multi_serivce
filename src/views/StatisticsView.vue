@@ -1,5 +1,5 @@
 <template>
-    <div class="statistics">
+    <div class="statistics" id="statistics">
         <span class="statistics_back">
         <div class="statistics_box">
             <div class="statistics_header">
@@ -24,10 +24,21 @@
 <script>
 import References from '@/components/Statistics/ReferencesCmp.vue';
 import Numbers from '@/components/Statistics/NumbersCmp.vue';
+import ScrollReveal from 'scrollreveal';
 export default {
     name:'StatisticsView',
     components: {
         References, Numbers
-    }, 
+    },
+    mounted(){
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        })
+        sr.reveal(`#statistics`);
+    }
 }
+
 </script>

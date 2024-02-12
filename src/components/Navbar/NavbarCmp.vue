@@ -2,7 +2,7 @@
 <header class="header">
   <nav class="nav container">
     <div class="nav_data">
-      <a href="#" class="nav_logo">
+      <a href="#" class="nav_logo" @click="reload()">
         <img src="../../assets/img/logo.png" alt="Logo">
       </a> 
       <div class="nav_toggle" id="nav-toggle">
@@ -169,6 +169,11 @@
 <script>
 export default {
   name: 'NavbarCmp',
+  methods:{
+    reload(){
+      location.reload();
+    }
+  },
   mounted(){
     const showMenu = (toggleId, navId) =>{
       const toggle = document.getElementById(toggleId),nav = document.getElementById(navId);

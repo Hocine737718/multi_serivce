@@ -4,7 +4,6 @@
   </div>
 </template>
 <script>
-
 export default {
     name:'ReferencesCmp',
     data() {
@@ -39,7 +38,7 @@ export default {
         styleOptions: {
           width: "100%",
           height: "100%",
-          margin:"auto",
+          margin:"auto"
         }
       }
     }

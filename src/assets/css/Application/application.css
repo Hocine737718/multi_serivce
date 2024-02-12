@@ -73,7 +73,7 @@
     font-size: 1.15rem;
     resize: none;
 }
-.application_input:focus, .textarea:focus{
+.application_input:focus{
     border-color: red;
 }
 .application_box span{
@@ -89,7 +89,8 @@
     color: black;
 }
 .application_box button:hover{
-    border: 2px red solid;
+    border: 1px red solid;
+    background-color: rgb(255, 75, 75);
 }
 .applcation_footer{
     display: flex;

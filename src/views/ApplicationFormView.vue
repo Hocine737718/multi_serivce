@@ -1,5 +1,5 @@
 <template>
-    <div class="application">
+    <form class="application">
         <span class="application_back">
         <div class="application_header">
             <div class="application_title">
@@ -20,7 +20,7 @@
                 <div class="application_label">
                     Mail:<span class="required">&ast;</span>
                 </div>
-                <input class="application_input" type="text"  required>
+                <input class="application_input" type="email"  required>
             </div>
             <div class="application_box">
                 <div class="application_label">
@@ -60,7 +60,7 @@
             </button>
         </div>
         </span>
-    </div>
+    </form>
 </template>
 <script>
 export default {

@@ -1,6 +1,6 @@
 @media screen and (max-width: 1440px) {
     .home_services {
-        padding: 3rem 1rem;
+        padding: 5rem 1rem;
         row-gap: 1rem;
     }
     .services_header h2{

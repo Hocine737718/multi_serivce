@@ -3,11 +3,11 @@
         <div class="container footer_container">
             <div class="footer_row footer_first_row">
                 <div class="footer_col">
-                    <h2>GMS-Logo</h2>
+                    <h2>Sociales</h2>
                     <div class="footer_socials">
-                        <a href="https://www.facebook.com/"><i class="ri-facebook-box-fill"></i></a>
-                        <a href="https://www.instagram.com/"><i class="ri-instagram-fill"></i></a>
-                        <a href="https://twitter.com/"><i class="ri-twitter-x-fill"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-box-fill"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="ri-twitter-x-fill"></i></a>
                     </div>
                 </div>
                 <div class="footer_col">

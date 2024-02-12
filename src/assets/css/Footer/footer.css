@@ -40,7 +40,7 @@
     font-size: 1.5rem;
     font-weight: var(--font-semi-bold);
 }
-.footer_col h2:after {
+.footer_col h2:after, .footer_col img:after {
     display: block;
     position: relative;
     bottom: -4px;
