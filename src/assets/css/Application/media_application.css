@@ -1,0 +1,96 @@
+@media screen and (max-width: 1114px) {
+    .application_back{
+        padding: 30px 0px;
+    } 
+}
+@media screen and (max-width: 974px) {
+    .application_header{
+        padding: 20px;
+        width:100%;
+    }
+}
+@media screen and (max-width: 845px) {
+    .application_header{
+        align-items: center;
+        width:100%;
+    }
+    .application_header p{
+        text-align: justify;
+    }
+    .application_title {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 773px) {
+    .application_body {
+        padding: 0;
+    }
+    .application_box {
+        padding: 10px 0;
+    }
+    .application_input{
+        width: 400px;
+    }
+    .applcation_footer{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 705px) {
+    .applcation_footer{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 623px) {
+    .application_input{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 578px) {
+    .application_header{
+        padding: 20px 5px;
+    }
+    .application_title {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 512px) {
+    .application_input{
+        width: 250px;
+        padding: 5px;
+    }
+    .application button{
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+    .application_label {
+        width: 150px;
+        font-size: 1rem;
+    }
+    .application_box small{
+        font-size: 0.8rem;
+    }
+    .applcation_footer{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 432px) {
+    .application_title {
+        font-size: 1rem;
+    }
+    .application_input{
+        width: 150px;
+    }
+    .application_header p {
+        font-size: 0.75rem;
+    }
+    .application_label {
+        width: 120px;
+        font-size: 0.75rem;
+    }
+    .application_box small{
+        font-size: 0.7rem;
+    }
+    .applcation_footer{
+        width: 300px;
+    }
+}

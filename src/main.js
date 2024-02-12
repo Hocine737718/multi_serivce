@@ -20,6 +20,8 @@ import './assets/css/Article/article.css'
 import './assets/css/Article/media_article.css'
 import './assets/css/Statistics/statistics.css'
 import './assets/css/Statistics/media_statistics.css'
+import './assets/css/Application/application.css'
+import './assets/css/Application/media_application.css'
 import './assets/css/ScrollUp/scrollup.css'
 
 

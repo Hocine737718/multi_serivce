@@ -14,6 +14,7 @@ import AuditRhView from '@/views/Articles/AuditRhView.vue'
 import AdminRhView from '@/views/Articles/AdminRhView.vue'
 import CounselView from '@/views/Articles/CounselView.vue'
 import StatisticsView from '@/views/StatisticsView.vue'
+import ApplicationFormView from '@/views/ApplicationFormView.vue'
 const routes = [
   {
     path: '/',
@@ -89,6 +90,11 @@ const routes = [
     path: '/statistiques',
     name: 'statistiques',
     component: StatisticsView
+  },
+  {
+    path: '/candidature-spontanee',
+    name: 'candidature-spontanee',
+    component: ApplicationFormView
   },
 ]
 
