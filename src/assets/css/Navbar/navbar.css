@@ -75,6 +75,7 @@ nav {
 }  
 .nav_link:hover {
     background-color: var(--black-color-light);
+    color: #f3e53d;
 }
 .show-menu {
     opacity: 1;

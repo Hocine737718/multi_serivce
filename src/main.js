@@ -2,6 +2,10 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import CanvasJSStockChart from '@canvasjs/vue-stockcharts';
+//import { BootstrapVue} from 'bootstrap-vue'
+
+//import 'bootstrap/dist/css/bootstrap.css';
+//import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 import './assets/css/_global.css'
 import './assets/css/Navbar/navbar.css'
@@ -25,5 +29,5 @@ import './assets/css/Application/media_application.css'
 import './assets/css/ScrollUp/scrollup.css'
 
 
-
+//Vue.use(BootstrapVue)
 createApp(App).use(router).use(CanvasJSStockChart).mount('#app')
