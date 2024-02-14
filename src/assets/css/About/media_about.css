@@ -29,7 +29,7 @@
         row-gap: 10px;
     } 
 }
-@media screen and (max-width: 562px) {
+@media screen and (max-width: 580px) {
     .about_title{
         font-size: 1.5rem;
     }
