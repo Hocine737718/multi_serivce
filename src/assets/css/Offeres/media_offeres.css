@@ -1,0 +1,91 @@
+@media screen and (max-width: 1120px) {
+    .offeres_body {
+        padding: 25px 5px;
+    }
+    .offeres_back {
+        padding: 30px 0px;
+    }
+    .offeres_th:nth-child(2), .offeres_td:nth-child(2){
+        width: 100%;
+        min-width: 600px;
+    }
+}
+@media screen and (max-width: 965px) {
+    .offeres_table, .offeres_th, .offeres_td {
+        padding: 0.75rem 0.5rem;
+    }
+}
+@media screen and (max-width: 845px) {
+    .offeres_header {
+        font-size: 2.25rem;
+    }
+    .offeres_th {
+        font-size: 1.15rem;
+    }
+    .offeres_td {
+        font-size: 0.85rem;
+    }
+    .offeres_th:nth-child(2), .offeres_td:nth-child(2){
+        min-width: 490px;
+    }
+    .badge {
+       font-size: 0.85rem;
+    }
+    .offeres_th .icon-arrow {
+        font-size: 1.5rem;
+    }
+    .offeres_th:first-child, .offeres_td:first-child, .offeres_th:last-child, .offeres_td:last-child {
+        width: 130px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .offeres_body {
+        padding: 35px 5px;
+    }
+    .offeres_header {
+        font-size: 2rem;
+    }
+    .offeres_th {
+        font-size: 1rem;
+    }
+    .offeres_td {
+        font-size: 0.75rem;
+    }
+    .offeres_th:nth-child(2), .offeres_td:nth-child(2){
+        min-width: 390px;
+    }
+    .badge {
+        font-size: 0.75rem;
+     }
+    .offeres_th .icon-arrow {
+        font-size: 1.25rem;
+    }
+    .offeres_th:first-child, .offeres_td:first-child, .offeres_th:last-child, .offeres_td:last-child {
+        width: 100px;
+    }
+    .offeres_select {
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .offeres_th:nth-child(2), .offeres_td:nth-child(2){
+        min-width: 300px;
+    }
+    .offeres_th:first-child, .offeres_td:first-child, .offeres_th:last-child, .offeres_td:last-child {
+        width: 90px;
+    }
+}
+@media screen and (max-width: 470px){
+    .offeres_header {
+        font-size: 1.75rem;
+    }
+    .offeres_body {
+        padding: 25px 0px;
+    }
+    .offeres_th {
+        font-size: 0.85rem;
+    }
+    .offeres_select {
+        font-size: 0.85rem;
+    }
+}

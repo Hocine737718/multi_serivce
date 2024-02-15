@@ -22,6 +22,8 @@ import './assets/css/Statistics/statistics.css'
 import './assets/css/Statistics/media_statistics.css'
 import './assets/css/Application/application.css'
 import './assets/css/Application/media_application.css'
+import './assets/css/Offeres/offeres.css'
+import './assets/css/Offeres/media_offeres.css'
 import './assets/css/ScrollUp/scrollup.css'
 
 

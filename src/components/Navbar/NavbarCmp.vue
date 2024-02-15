@@ -123,8 +123,8 @@
           </div>
           <ul class="dropdown_menu">
             <li>
-              <a href="/offre-emploi" class="dropdown_link">
-                Offre d'emploi
+              <a href="/offres-emploi" class="dropdown_link">
+                Offres d'emploi
               </a>
             </li>
             <li>

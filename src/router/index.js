@@ -15,6 +15,7 @@ import AdminRhView from '@/views/Articles/AdminRhView.vue'
 import CounselView from '@/views/Articles/CounselView.vue'
 import StatisticsView from '@/views/StatisticsView.vue'
 import ApplicationFormView from '@/views/ApplicationFormView.vue'
+import JobOfferesView from '@/views/JobOfferesView.vue'
 const routes = [
   {
     path: '/',
@@ -95,6 +96,16 @@ const routes = [
     path: '/candidature-spontanee',
     name: 'candidature-spontanee',
     component: ApplicationFormView
+  },
+  {
+    path: '/offres-emploi',
+    name: 'offres-emploi',
+    component: JobOfferesView
+  },
+  {
+    path: '/offres/drh',
+    name: '/offres/drh',
+    component: JobOfferesView
   },
 ]
 
