@@ -26,6 +26,8 @@
     --font-semi-bold: 700;
 
     --normal-font-size: .938rem;
+
+    --back-color: rgb(255 254 171 / 90%);
 }
 * {
     box-sizing: border-box;
