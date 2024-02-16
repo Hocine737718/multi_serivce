@@ -16,7 +16,10 @@
     }
     .home_signup h1{
         font-size: 1.5rem;
-    }    
+    }
+    .about_h_back {
+        padding: 2rem 0.75rem;
+    }     
 }
 @media screen and (max-width: 554px) {
     .signup_box:hover > .signup_input,.signup_input:focus{
@@ -36,12 +39,11 @@
     }
     .home_signup h1{
         font-size: 1.25rem;
-    }    
+    }      
 }
 @media screen and (max-width: 428px) {
-    .home_about {
+    .about_h_back {
         font-size: 0.85rem;
-        padding: 2rem;
     }    
     .about_h_title{
         font-size: 1.5rem;
@@ -71,7 +73,7 @@
     .signup_form {
         padding: 3rem 0.5rem;
     } 
-    .home_about {
+    .about_h_back {
         font-size: 0.75rem;
     }    
     .about_h_title{

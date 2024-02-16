@@ -1,5 +1,6 @@
 <template>
     <div class="home_about" id="home_about">
+        <span class="about_h_back">
         <div class="about_h_title">
             Qui sommes-nous
         </div>
@@ -8,6 +9,7 @@
             Global Management Services possède les compétences, les ressources et le savoir-faire nécessaires pour relever vos défis en matière d’administration des ressources humaines.
         </p>
         <a href="/qui-somme-nous">Voir plus</a>
+        </span>
     </div>
 </template>
 
