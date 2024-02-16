@@ -1,7 +1,4 @@
 @media screen and (max-width: 980px) {
-    .contact_back{
-        min-height: calc(100vh - var(--header-height));
-    }
     .contact_subtitle{
         font-size: 1.15rem;
     }

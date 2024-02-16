@@ -17,6 +17,7 @@ import StatisticsView from '@/views/StatisticsView.vue'
 import ApplicationFormView from '@/views/ApplicationFormView.vue'
 import JobOfferesView from '@/views/JobOfferesView.vue'
 import ContactView from '@/views/ContactView.vue'
+import ErrorView from '@/views/ErrorView.vue'
 const routes = [
   {
     path: '/',
@@ -112,7 +113,12 @@ const routes = [
     path: '/contact',
     name: '/contact',
     component: ContactView
-  }
+  },
+  {
+    path : '/:catchAll(.*)',
+    name : '/erreur',
+    component : ErrorView
+  },
 ]
 
 const router = createRouter({

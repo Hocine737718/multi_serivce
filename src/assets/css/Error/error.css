@@ -1,0 +1,35 @@
+.error{
+    margin-top: var(--header-height);
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../img/bg/bg.jpg");
+    min-height: calc(100vh - var(--header-height));
+}
+.error_back{
+    background-color:rgba(255,255,255,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    min-height: calc(100vh - var(--header-height));
+}
+.error_content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.error_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error_img{
+    width: 250px;
+    height: 250px;
+}
+.error_text{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+}
