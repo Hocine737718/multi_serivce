@@ -24,6 +24,8 @@ import './assets/css/Application/application.css'
 import './assets/css/Application/media_application.css'
 import './assets/css/Offeres/offeres.css'
 import './assets/css/Offeres/media_offeres.css'
+import './assets/css/Contact/contact.css'
+import './assets/css/Contact/media_contact.css'
 import './assets/css/ScrollUp/scrollup.css'
 
 

@@ -16,6 +16,7 @@ import CounselView from '@/views/Articles/CounselView.vue'
 import StatisticsView from '@/views/StatisticsView.vue'
 import ApplicationFormView from '@/views/ApplicationFormView.vue'
 import JobOfferesView from '@/views/JobOfferesView.vue'
+import ContactView from '@/views/ContactView.vue'
 const routes = [
   {
     path: '/',
@@ -107,6 +108,11 @@ const routes = [
     name: '/offres/drh',
     component: JobOfferesView
   },
+  {
+    path: '/contact',
+    name: '/contact',
+    component: ContactView
+  }
 ]
 
 const router = createRouter({
