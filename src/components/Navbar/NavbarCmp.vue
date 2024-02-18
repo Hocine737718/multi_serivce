@@ -141,17 +141,17 @@
           </div>
           <ul class="dropdown_menu">
             <li>
-              <a href="/telechargement/droit-travail" class="dropdown_link">
+              <a href="#" class="dropdown_link" @click="download('Droit de Travail.pdf')">
                 Droit de Travail
               </a>
             </li>
             <li>
-              <a href="/telechargement/droit-securite-sociale" class="dropdown_link">
+              <a href="#" class="dropdown_link" @click="download('Droit de la securite sociale.pdf')">
                 Droit de la securite sociale
               </a>
             </li>
             <li>
-              <a href="/telechargement/seminaires" class="dropdown_link">
+              <a href="#" class="dropdown_link" @click="download('Séminaires.pdf')">
                 Séminaires
               </a>
             </li>
@@ -172,6 +172,9 @@ export default {
   methods:{
     reload(){
       location.reload();
+    },
+    async download(filename){
+      this.$store.dispatch('download',filename);
     }
   },
   mounted(){

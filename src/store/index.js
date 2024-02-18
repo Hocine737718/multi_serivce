@@ -127,6 +127,27 @@ export default createStore({
           icon: "error",title: "Erreur",text: "Votre candidature n'a pas été enovoyé !",
         });
       }  
+    },
+    async download(context,filename){
+      const serverUrl=`${context.state.baseURL}/download.php?filename=${filename}`;
+      axios({
+        url: serverUrl,
+        method: 'GET',
+        responseType: 'blob', // Indique que la réponse est un blob (fichier)
+      })
+      .then(response => {
+        const url = window.URL.createObjectURL(new Blob([response.data]));
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', filename);
+        document.body.appendChild(link);
+        link.click();
+      })
+      .catch(e => {
+        Swal.fire({
+          icon: "error",title: "Erreur",text: e.message,
+        });      
+      });
     }
   },
   modules: {
