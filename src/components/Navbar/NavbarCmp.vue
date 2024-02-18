@@ -83,7 +83,8 @@
 
             <li class="dropdown_subitem">
               <a href="/article/admin-rh" class="dropdown_link">
-                Administration RH  <i class="ri-add-line dropdown_add"></i>
+                Administration RH 
+                <i class="ri-add-line dropdown_add"></i> 
               </a>
               <ul class="dropdown_submenu">
                 <li>

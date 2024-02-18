@@ -2,6 +2,7 @@
     <div class="offers_body">
         <div class="offers_limit">
 			<select id="limit" name="limit" class="offers_select" size="1" @change="handleChange($event)">
+                <option value="1">1</option>
                 <option value="5">5</option>
                 <option value="10" selected="selected">10</option>
                 <option value="15">15</option>

@@ -7,7 +7,7 @@
                 </div>
                 <div class="error_box">
                     <p class="error_text">
-                        Désolé, la page que vous avez demandée n'existe pas.
+                        Désolé, la page que vous avez demandée est introuvable.
                     </p>
                 </div>
             </div>

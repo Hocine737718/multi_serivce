@@ -8,7 +8,7 @@
             :pagination="{ clickable: true }"
             loop=true
             grabCursor=true
-            :autoplay="{delay: 3000, disableOnInteraction: false }"
+            :autoplay="{delay: 3000, disableOnInteraction: true }"
             @swiper="onSwiper"
             @slideChange="onSlideChange"
         >
@@ -30,8 +30,8 @@
             <swiper-slide>
                 <div class="slider_article article1">
                     <div class="slider_buttons">
-                        <div class="slider_button"><a href="/audit">Audit gratuit</a></div>
-                        <div  class="slider_button"><a href="/devis">Demandez un devis</a></div>                        
+                        <a class="slider_button" href="/audit">Audit gratuit</a>
+                        <a class="slider_button" href="/devis">Demandez un devis</a>                    
                     </div>
                 </div>
             </swiper-slide>

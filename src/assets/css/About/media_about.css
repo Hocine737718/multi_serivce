@@ -43,7 +43,7 @@
         font-size: 1.15rem;
     }
 }
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 470px) {
     .about_header {
        padding: 20px 10px;
     }
@@ -65,7 +65,7 @@
         margin-bottom: 7px;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     .about_nav_item {
         font-size: 0.75rem;
     }

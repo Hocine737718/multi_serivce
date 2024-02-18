@@ -93,4 +93,8 @@
     .contact_form{
         text-align: center;
     }
+    .contact_button{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
