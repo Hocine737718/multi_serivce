@@ -73,6 +73,10 @@
     padding: 10px 15px;
     font-size: 1.15rem;
     resize: none;
+    height: 46px;
+}
+.application_input.textarea{
+    height: auto;
 }
 .application_input:focus{
     border-color: red;
@@ -106,6 +110,16 @@
 .applcation_footer button:hover{
     background-color: var(--first-color-light);
 }
-.select{
-    font-size: 0.75rem;
+.application_file{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;  
+    column-gap: 5px;  
+}
+.application_file small{
+    white-space: nowrap; /* Empêche le texte de se retourner à la ligne */
+    overflow: hidden; /* Cache tout texte qui dépasse de l'élément */
+    text-overflow: ellipsis; /* Affiche "..." lorsque le texte est coupé */
+    width:200px;
 }

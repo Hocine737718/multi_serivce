@@ -16,7 +16,7 @@
         width:100%;
     }
     .application_input{
-        max-width: 600px;
+        max-width: 550px;
     }    
 }
 @media screen and (max-width: 860px) {
@@ -31,7 +31,7 @@
         font-size: 2rem;
     }
     .application_input{
-        max-width: 500px;
+        max-width: 470px;
     }   
 }
 @media screen and (max-width: 773px) {
@@ -40,6 +40,20 @@
     }
     .application_box {
         padding: 10px 0;
+    }
+    .application_input{
+        max-width: 400px;
+    } 
+    .select_options{
+        font-size:0.75rem;
+    }
+}
+@media screen and (max-width: 645px) {
+    .application_input{
+        max-width: 350px;
+    } 
+    .select_options{
+        row-gap: 15px!important;
     }
 }
 @media screen and (max-width: 598px) {
@@ -51,6 +65,12 @@
     }    
     .application_title {
         font-size: 1.5rem;
+    }
+    .application_input{
+        max-width: 280px;
+    } 
+    .application_file small{
+       width:150px;
     }
 }
 @media screen and (max-width: 512px) {
@@ -68,6 +88,23 @@
     .application_box small{
         font-size: 0.8rem;
     }
+    .application_input {
+        height: 40px;
+    }
+    .application_file small{
+        width:170px;
+     }
+}
+@media screen and (max-width: 462px) {
+    .application_input{
+        max-width: 250px;
+    } 
+    .select_options{
+       row-gap: 10px!important;
+    }
+    .application_file small{
+        width:120px;
+    }
 }
 @media screen and (max-width: 432px) {
     .application_title {
@@ -83,4 +120,30 @@
     .application_box small{
         font-size: 0.7rem;
     }
+}
+@media screen and (max-width: 400px) {
+    .application_input{
+        max-width: 190px;
+    } 
+    .select_options{
+        font-size:0.65rem;
+    }
+    .select_search input::placeholder {
+        font-size: 0.8rem;
+    }
+    .application_file{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;  
+        row-gap: 5px;  
+    }
+    .application_file small{
+        width:150px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .application_input{
+        max-width: 150px;
+    } 
 }

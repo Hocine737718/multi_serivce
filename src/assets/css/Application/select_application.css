@@ -1,0 +1,95 @@
+.select{
+    background: #fff;  
+    font-size: 1rem;
+}
+.select_btn, .select_btn li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.select_btn{
+    border-radius: 7px;
+    justify-content: space-between;
+}
+.select_btn span{
+    white-space: nowrap; /* Empêche le texte de se retourner à la ligne */
+    overflow: hidden; /* Cache tout texte qui dépasse de l'élément */
+    text-overflow: ellipsis; /* Affiche "..." lorsque le texte est coupé */
+}
+.select_btn i{
+    font-size: 22px;
+    transition: transform 0.3s linear;
+}
+.select.active .select_btn i{
+    transform: rotate(-180deg);
+}
+.select_content{
+    display: none;
+}
+.select.active .select_content{
+    margin-top: 15px;
+    display: block;
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 90;
+}
+.select_content .select_search{
+    position: relative;
+}
+.select_search i{
+    top: 50%;
+    left: 15px;
+    color: #999;
+    font-size: 20px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.select_search input{
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0 20px 0 43px;
+    border: 1px solid #B3B3B3;
+}
+.select_search input:focus{
+    padding-left: 42px;
+    border: 2px solid red;
+}
+.select_search input::placeholder{
+    color: #bfbfbf;
+}
+.select_options{
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 7px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 10px;
+}
+.select_options::-webkit-scrollbar{
+    width: 7px;
+}
+.select_options::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+.select_options::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 25px;
+}
+.select_options::-webkit-scrollbar-thumb:hover{
+    background: #b3b3b3;
+}
+.select_options li{
+    padding: 0 13px;
+    cursor: pointer;
+    display: block;
+}
+.select_options li:hover, .select li.selected{
+    border-radius: 5px;
+    background: #f2f2f2;
+}

@@ -45,12 +45,15 @@
                     Joindre CV:<span class="required">&ast;</span>
                 </div>
                 <span>
-                    <button @click="select_file">
-                        <i class="ri-file-upload-fill"></i>
-                        Parcourir
-                    </button>
-                    <input type="file" id="file_input" @change="handleFileChange($event)" style="display:none;">
-                    <small>La taille limite pour chaque fichier est de 100 MB</small>
+                    <div class="application_file">
+                        <button @click="select_file">
+                            <i class="ri-file-upload-fill"></i>
+                            Parcourir
+                        </button>
+                        <input type="file" id="file_input" @change="handleFileChange($event)" style="display:none;">
+                        <small>{{this.filename}}</small>
+                    </div>
+                    <small>La taille limite pour chaque fichier est de 25 MB</small>
                 </span>
             </div>                       
         </div>
@@ -73,6 +76,12 @@ export default {
             job:"",
             message:"",
             selected_file:""
+        }
+    },
+    computed:{
+        filename(){
+            if(this.selected_file!="") return this.selected_file.name;
+            else return "Aucun fichier sélectionné";
         }
     },
     methods:{
