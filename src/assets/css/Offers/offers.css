@@ -1,11 +1,11 @@
-.offeres{
+.offers{
     margin-top: var(--header-height);
     background-size: cover;
     background-position: center;
     background-image: url("../../img/bg/bg.jpg");
     min-height: calc(100vh - var(--header-height));
 }
-.offeres_back{
+.offers_back{
     background-color:var(--back-color);
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
     min-height: calc(100vh - var(--header-height));
     padding: 30px 70px;
 }
-.offeres_header{
+.offers_header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,32 +25,32 @@
     color: var(--first-color);
     text-transform: uppercase;    
 }
-.offeres_body{
+.offers_body{
     display: block;
     padding: 35px 20px;   
     background-color: #FFF0;
     width: 100%;
     overflow-y: scroll;
 }
-.offeres_body::-webkit-scrollbar{
+.offers_body::-webkit-scrollbar{
     width: 0.5rem;
     height: 0.5rem;
 }
-.offeres_body::-webkit-scrollbar-thumb{
+.offers_body::-webkit-scrollbar-thumb{
     border-radius: .5rem;
     background-color: #0004;
     visibility: hidden;
 }
-.offeres_body:hover::-webkit-scrollbar-thumb{ 
+.offers_body:hover::-webkit-scrollbar-thumb{ 
     visibility: visible;
 }
-.offeres_table, .offeres_th, .offeres_td {
+.offers_table, .offers_th, .offers_td {
     border: 2px solid black;
     border-collapse: collapse;
     padding: 1rem;
     text-align: left;   
 }
-.offeres_th{
+.offers_th{
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -58,37 +58,37 @@
     color: white;
     cursor: pointer;
 }
-.offeres_th div{
+.offers_th div{
     display:flex;
     flex-direction:row;
     align-items:center;
 }
-.offeres_th.active, .offeres_th:hover{
+.offers_th.active, .offers_th:hover{
     color: var(--third-color);
 }
-.offeres_th:first-child, .offeres_td:first-child, .offeres_th:last-child, .offeres_td:last-child{
+.offers_th:first-child, .offers_td:first-child, .offers_th:last-child, .offers_td:last-child{
     text-align: center;
 }
-.offeres_th:nth-child(2), .offeres_td:nth-child(2){
+.offers_th:nth-child(2), .offers_td:nth-child(2){
     width: 90%;
     min-width: 700px;
 }
-.offeres_td{
+.offers_td{
     font-size: 1rem;
     font-weight: 400;
     background-color: whitesmoke;
 }
-.offeres_link:hover{
+.offers_link:hover{
     color: blue;
     font-size: 700;
     text-decoration: underline;
 }
-.offeres_th .icon-arrow{
+.offers_th .icon-arrow{
     display: inline-block;
     font-size: 1.75rem;   
     transition: transform 0.4s;
 }
-.offeres_th.desc .icon-arrow{
+.offers_th.desc .icon-arrow{
     transform: rotate(180deg) translateY(-15%) ;
 }
 .badge {
@@ -105,14 +105,14 @@
     background-color: #999999;
     border-radius: 10px;
 }
-.offeres_limit{
+.offers_limit{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
     padding: 2px 0px;
 }
-.offeres_select {
+.offers_select {
     padding: 5px;
     font-size: 1rem;
     border: 2px red solid;

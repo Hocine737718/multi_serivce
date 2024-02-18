@@ -2,6 +2,7 @@ import { createStore } from 'vuex'
 import {useAxios} from '@/assets/js/global.js';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+
 export default createStore({
   state: {
     baseURL: "http://localhost:80/server/MULTI_SERVICES/_php",
@@ -34,6 +35,7 @@ export default createStore({
         });
       }  
     },
+
     async contact(context,{name,email,message}){
       const dataLabel="contact";
       const dataContent=`{
@@ -55,6 +57,7 @@ export default createStore({
         });
       }  
     },
+
     async job_application(context,{data,file}){
       try
       {
@@ -78,6 +81,7 @@ export default createStore({
         });
       }  
     },
+
     async get_offers(context){
       const dataLabel="get_offers";
       const dataContent="";
@@ -91,6 +95,7 @@ export default createStore({
         console.error("Get Offers-> ",res.msg);
       }       
     },  
+
     async add_click(context,id){
       const dataLabel="add_clicks";
       const dataContent=`{
@@ -105,6 +110,7 @@ export default createStore({
           console.error("Add Clicks-> ",res.msg);
       }  
     },
+
     async quote(context,{data,file}){
       try
       {
@@ -128,6 +134,7 @@ export default createStore({
         });
       }  
     },
+
     async download(context,filename){
       const serverUrl=`${context.state.baseURL}/download.php?filename=${filename}`;
       axios({

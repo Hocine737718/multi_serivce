@@ -73,28 +73,3 @@ button{
       --normal-font-size: 0.85rem;
     }
 }
-@media screen and (max-width: 1024px) {
-    .swal2-popup{
-        width:25rem!important;
-    }
-}
-@media screen and (max-width: 734px) {
-    .swal2-popup{
-        width:20rem!important;
-    }
-}
-@media screen and (max-width: 492px) {
-    div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line] {
-        width: 2.75rem!important;
-        height: 5.5rem!important;    }
-    div:where(.swal2-container) h2:where(.swal2-title) {
-        font-size: 1.5rem!important;
-    }
-    .swal2-popup{
-        width:15rem!important;
-    }
-    div:where(.swal2-container) .swal2-html-container {
-        margin: 0.5rem!important;
-        font-size: 0.85rem!important;
-    }
-}

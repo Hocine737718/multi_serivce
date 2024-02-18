@@ -15,10 +15,10 @@
                 ];
                 $offers[]=$offer;
             }
-			$data=['success'=>TRUE,"msg"=>"Offers sont prêts !","content"=>$offers];
+			$data=['success'=>TRUE,"msg"=>"Offres sont prêts !","content"=>$offers];
 		}
 		else{
-			$data=['success'=>FALSE,"msg"=>'Aucun Offer existe  !!'];
+			$data=['success'=>FALSE,"msg"=>'Aucun Offre existe  !!'];
 		}  
 	}
     else {

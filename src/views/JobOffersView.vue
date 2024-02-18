@@ -1,18 +1,18 @@
 <template>
-    <div class="offeres">
-        <span class="offeres_back">
-        <div class="offeres_header">
+    <div class="offers">
+        <span class="offers_back">
+        <div class="offers_header">
             OFFRES D'EMPLOI
         </div>
-        <OfferesTableCmp :lines="lines" :columns="columns"/>
+        <OffersTableCmp :lines="lines" :columns="columns"/>
         </span>
     </div>
 </template>
 <script>
-import OfferesTableCmp from '@/components/Offeres/OfferesTableCmp.vue'
+import OffersTableCmp from '@/components/Offers/OffersTableCmp.vue'
 export default {
-    name:'JobOffersView',
-    components:{OfferesTableCmp},
+    name:'JobOffrsView',
+    components:{OffersTableCmp},
     data(){
         return {
             columns:[ 

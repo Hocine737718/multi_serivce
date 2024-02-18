@@ -53,7 +53,7 @@
                 ';  
                 $mail->Body= $html;    
                 $mail->send();
-                $data=['success'=>TRUE,"msg"=>'Votre mail est bien envoyé !'];
+                $data=['success'=>TRUE,"msg"=>'Votre email est bien envoyé !'];
             } 
             catch (Exception $e) {
                 $data=['success'=>FALSE,"msg"=>'Erreur lors de l\'envoi du message : ', $e->getMessage()];

@@ -1,10 +1,8 @@
 <?php
 include 'includes/init.php';
-// Vérifie si le fichier existe
 if(isset($_GET['filename'])) {
     $filename = 'files/' . $_GET['filename'];
     if (file_exists($filename)) {
-        /*
         // Définit les en-têtes HTTP pour indiquer qu'il s'agit d'un téléchargement de fichier
         header('Content-Description: File Transfer');
         header('Content-Type: application/octet-stream');
@@ -15,12 +13,6 @@ if(isset($_GET['filename'])) {
         header('Content-Length: ' . filesize($filename));
         // Envoie le fichier au client
         readfile($filename);
-        exit;
-        */
-        header('Content-Type: application/octet-stream');
-        header("Content-Transfer-Encoding: Binary"); 
-        header("Content-disposition: attachment; filename=\"" . basename($filename) . "\""); 
-        readfile($filename);
         exit();
     } 
     else {
@@ -30,7 +22,7 @@ if(isset($_GET['filename'])) {
     }
 }
 else {
-    // Si $_POST['filename'] n'est pas défini, retourner une réponse appropriée
+    // Si $_GET['filename'] n'est pas défini, retourner une réponse appropriée
     echo "Veuillez réessayer SVP !!";
 }
 ?>

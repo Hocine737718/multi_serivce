@@ -19,7 +19,7 @@
                 $data=['success'=>TRUE,"msg"=>'Clics est modifié !'];        
             }
             else{
-                $data=['success'=>FALSE,"msg"=>'Offer n\'existe pas'];
+                $data=['success'=>FALSE,"msg"=>'Offre n\'existe pas'];
             }
         }
         else {

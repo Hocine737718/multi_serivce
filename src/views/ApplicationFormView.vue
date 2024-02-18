@@ -46,14 +46,14 @@
                 </div>
                 <span>
                     <div class="application_file">
-                        <button @click="select_file">
+                        <button @click="selectFile()">
                             <i class="ri-file-upload-fill"></i>
                             Parcourir
                         </button>
-                        <input type="file" id="file_input" @change="handleFileChange($event)" style="display:none;">
+                        <input type="file" id="file_input" @change="onFileChange($event)" style="display:none;">
                         <small>{{this.filename}}</small>
                     </div>
-                    <small>La taille limite pour chaque fichier est de 25 MB</small>
+                    <small>La taille limite pour chaque fichier est de 20 MB</small>
                 </span>
             </div>                       
         </div>
@@ -66,6 +66,8 @@
     </div>
 </template>
 <script>
+import {select_file,handleFileChange,validateEmail,validatePhone} from '@/assets/js/global.js';
+import Swal from 'sweetalert2';
 export default {
     name:'ApplicationFormView',
     data(){
@@ -85,42 +87,44 @@ export default {
         }
     },
     methods:{
-        select_file(){
-            var file_input = document.getElementById("file_input");
-            file_input.click();
+        selectFile(){
+            select_file("file_input");
         },
-        async handleFileChange(event){
-            try{
-                const fileList = event.target.files;
-                if (fileList.length > 0) 
-                {
-                    this.selected_file=fileList[0];
-                    //console.log("flg 01");
-                    if(this.selected_file.type !== "image/jpeg" && 
-                       this.selected_file.type !== "image/png" &&
-                       this.selected_file.type !== "image/jpg" &&
-                       this.selected_file.type !== "application/pdf" &&
-                        this.selected_file.type !== "application/msword" && // For .doc files
-                        this.selected_file.type !== "application/vnd.openxmlformats-officedocument.wordprocessingml.document") // For .docx files
-                    {
-                        throw new Error("Erreur Type Image");
-                    }
-                }
-                else
-                {
-                    console.log("Aucun fichier sélectionné");
-                }
-            }
-            catch (error) {
-                this.selected_file="";
-                console.error(error);
-            }
+        onFileChange(event){
+            handleFileChange(event).then((file) => {
+                this.selected_file = file;
+            });
         },
         action(){
-            if(this.name!="" && this.email!="" && this.message!="" && this.phone!="" && this.job!="" && this.selected_file!="") 
+            this.name=this.name.trim();
+            this.email=this.email.trim();
+            this.phone=this.phone.trim();
+            this.message=this.message.trim();
+            this.job=this.job.trim();
+
+            if(this.name!="" && validateEmail(this.email)!="" && this.message!="" && validatePhone(this.phone)!="" && this.job!="" && this.selected_file!="") 
             {
                 var data={name:this.name,email:this.email,phone:this.phone,job:this.job,message:this.message};
                 this.$store.dispatch('job_application',{data:data,file:this.selected_file});
+                location.reload();
+            }
+            else if(!validateEmail(this.email))
+            {
+                Swal.fire({
+                    icon: "error",title: "Erreur",text: "Revérifier l'email !",
+                });
+            }
+            else if(!validatePhone(this.phone))
+            {
+                Swal.fire({
+                    icon: "error",title: "Erreur",text: "Revérifier le numéro de téléphone !",
+                });
+            }
+            else
+            {
+                Swal.fire({
+                    icon: "error",title: "Erreur",text: "Réessayer SVP !",
+                });
             }
         }
     }

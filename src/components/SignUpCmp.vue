@@ -1,5 +1,5 @@
 <template>
-    <div class="home_signup" id="home_signup">
+    <div class="signup" id="signup">
         <h1>Inscrivez vous à la newsletter</h1>
         <form @submit.prevent="action" method="POST" class="signup_form" >
             <div class="signup_box">

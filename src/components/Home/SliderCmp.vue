@@ -8,6 +8,7 @@
             :pagination="{ clickable: true }"
             loop=true
             grabCursor=true
+            :autoplay="{delay: 3000, disableOnInteraction: false }"
             @swiper="onSwiper"
             @slideChange="onSlideChange"
         >
@@ -55,7 +56,7 @@
 </template>
 
 <script>
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -69,7 +70,7 @@ export default {
     },
     setup() {
       return {
-        modules: [Navigation, Pagination, Scrollbar, A11y],
+        modules: [Autoplay, Navigation, Pagination, Scrollbar, A11y],
       };
     },
 }

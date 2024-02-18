@@ -38,7 +38,7 @@
                 <div class="application_label">
                     Téléphone:<span class="required">&ast;</span>
                 </div>
-                <input class="application_input" type="text" v-model="phone" required>
+                <input class="application_input" type="phone" v-model="phone" required>
             </div>
             <div class="application_box">
                 <div class="application_label">
@@ -68,18 +68,18 @@
             </div>
             <div class="application_box">
                 <div class="application_label">
-                    Joindre CV:<span class="required">&ast;</span>
+                    Joindre un fichier
                 </div>
                 <span>
                     <div class="application_file">
-                        <button @click="select_file">
+                        <button @click="selectFile">
                             <i class="ri-file-upload-fill"></i>
                             Parcourir
                         </button>
-                        <input type="file" id="file_input" @change="handleFileChange($event)" style="display:none;">
+                        <input type="file" id="file_input" @change="onFileChange($event)" style="display:none;">
                         <small>{{this.filename}}</small>
                     </div>
-                    <small>La taille limite pour chaque fichier est de 25 MB</small>
+                    <small>La taille limite pour chaque fichier est de 20 MB</small>
                 </span>
             </div>                       
         </div>
@@ -92,6 +92,7 @@
     </div>
 </template>
 <script>
+import {select_file,handleFileChange,validateEmail,validatePhone} from '@/assets/js/global.js';
 import Swal from 'sweetalert2';
 export default {
     name:'ApplicationFormView',
@@ -147,55 +148,45 @@ export default {
         }
     },
     methods:{
-        select_file(){
-            var file_input = document.getElementById("file_input");
-            file_input.click();
+        selectFile(){
+            select_file("file_input");
         },
-        async handleFileChange(event){
-            //const maxFiles = 1;
-            const maxSizeInBytes = 25 * 1024 * 1024;
-            try{
-                const fileList = event.target.files;
-                if (fileList.length == 1) 
-                {
-                    this.selected_file=fileList[0];
-                    if(this.selected_file.type !== "image/jpeg" && 
-                       this.selected_file.type !== "image/png" &&
-                       this.selected_file.type !== "image/jpg" &&
-                       this.selected_file.type !== "application/pdf" &&
-                        this.selected_file.type !== "application/msword" && // For .doc files
-                        this.selected_file.type !== "application/vnd.openxmlformats-officedocument.wordprocessingml.document") // For .docx files
-                    {
-                        Swal.fire({
-                            icon: "error",title: "Erreur",text: "Erreur de type !",
-                        }); 
-                        throw new Error("Erreur de type !");
-                    }
-                    else if(this.selected_file.size> maxSizeInBytes)
-                    {
-                        Swal.fire({
-                            icon: "error",title: "Erreur",text: "Ne dépasse pas 25 Mo !",
-                        }); 
-                        throw new Error("Ne dépasse pas 25 Mo !");
-                    }
-                }
-                else if(fileList.length > 1)
-                {
-                    Swal.fire({
-                        icon: "error",title: "Erreur",text: "Séléctionner un seul fichier seulement !",
-                    });
-                }
-            }
-            catch (error) {
-                this.selected_file="";
-                console.error(error);
-            }
+        onFileChange(event){
+            handleFileChange(event).then((file) => {
+                this.selected_file = file;
+            });
         },
-        action(){
+        async action(){
+            this.name=this.name.trim();
+            this.email=this.email.trim();
+            this.phone=this.phone.trim();
+            this.message=this.message.trim();
+            this.job=this.job.trim();
+            this.entreprise=this.entreprise.trim()
+
             if(this.name!="" && this.email!="" && this.message!="" && this.phone!="" && this.job!="" && this.entreprise!="" && this.object!="" && this.selected_file!="") 
             {
                 var data={name:this.name,email:this.email,phone:this.phone,job:this.job,message:this.message,entreprise:this.entreprise,object:this.object};
-                this.$store.dispatch('quote',{data:data,file:this.selected_file});
+                await this.$store.dispatch('quote',{data:data,file:this.selected_file});
+                location.reload();
+            }
+            else if(!validateEmail(this.email))
+            {
+                Swal.fire({
+                    icon: "error",title: "Erreur",text: "Revérifier l'email !",
+                });
+            }
+            else if(!validatePhone(this.phone))
+            {
+                Swal.fire({
+                    icon: "error",title: "Erreur",text: "Revérifier le numéro de téléphone !",
+                });
+            }
+            else
+            {
+                Swal.fire({
+                    icon: "error",title: "Erreur",text: "Réessayer SVP !",
+                });
             }
         },
         updateName(option) {
@@ -210,7 +201,6 @@ export default {
     mounted(){
         const select = document.querySelector(".select"),
         selectBtn = select.querySelector(".select_btn");
-
         selectBtn.addEventListener("click", () => select.classList.toggle("active"));
     }
 }

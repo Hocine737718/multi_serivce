@@ -46,7 +46,7 @@
                         <div class="container">
                             <h2>Nom : '.$name.'</h2>
                             <h2>Email : '.$email.'</h2>
-                            <h2>Phone : '.$phone.'</h2>
+                            <h2>Téléphone : '.$phone.'</h2>
                             <p>
                                 '.$message.'
                             </p>

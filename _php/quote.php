@@ -64,7 +64,7 @@
                     $mail->addAttachment($file_tmp_path, $_FILES['attachment_file']['name']);
                 }
                 $mail->send();
-                $data=['success'=>TRUE,"msg"=>'Votre candidture est bien envoyé !'];
+                $data=['success'=>TRUE,"msg"=>'Votre demande est bien envoyé !'];
             } 
             catch (Exception $e) {
                 $data=['success'=>FALSE,"msg"=>'Erreur lors de l\'envoi du message : ', $e->getMessage()];

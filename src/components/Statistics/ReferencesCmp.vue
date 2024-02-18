@@ -21,7 +21,6 @@ export default {
           data: [{
             type: "doughnut",
             indexLabel: "{label} {y/24}(#percent%)",
-            /*yValueFormatString: "#,##0K",*/
             toolTipContent: "<span style='\"'color: {color};'\"'>{label}</span>: {y} clients",
             dataPoints: [
               { label: "BTPH", y: 5, color: '#3366cc' },

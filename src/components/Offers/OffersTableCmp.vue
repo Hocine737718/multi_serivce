@@ -1,7 +1,7 @@
 <template>
-    <div class="offeres_body">
-        <div class="offeres_limit">
-			<select id="limit" name="limit" class="offeres_select" size="1" @change="handleChange($event)">
+    <div class="offers_body">
+        <div class="offers_limit">
+			<select id="limit" name="limit" class="offers_select" size="1" @change="handleChange($event)">
                 <option value="5">5</option>
                 <option value="10" selected="selected">10</option>
                 <option value="15">15</option>
@@ -10,10 +10,10 @@
                 <option value="0">Tout</option>
             </select>
 		</div>
-        <table class="offeres_table">
+        <table class="offers_table">
             <thead>
                 <tr>
-                    <th class="offeres_th" v-for="col in columns" :key="col.field" @click="sort(col.field,$event)">
+                    <th class="offers_th" v-for="col in columns" :key="col.field" @click="sort(col.field,$event)">
                         <div>
                             {{col.title}}
                             <span class="icon-arrow">&UpArrow;</span>
@@ -23,11 +23,11 @@
             </thead>
             <tbody>
                 <tr v-if="lineSet.length==0">
-                    <td class="offeres_td" style="text-align: center;width:100%;min-width: 800px;" :colspan="columns.length">Aucun résultat trouvé.</td>
+                    <td class="offers_td" style="text-align: center;width:100%;min-width: 800px;" :colspan="columns.length">Aucun résultat trouvé.</td>
                 </tr>
                 <tr v-for="line in lineSet" :key="line.id">
-                    <td class="offeres_td" v-for="column in columns" :key="column.field">
-                        <a v-if="column.field=='title'" :href="line['link']" class="offeres_link" @click="click">{{ line[column.field] }}</a>
+                    <td class="offers_td" v-for="column in columns" :key="column.field">
+                        <a v-if="column.field=='title'" :href="line['link']" class="offers_link" @click="click">{{ line[column.field] }}</a>
                         <span v-else-if="column.field=='clicks'" class="badge">{{ line[column.field] }}</span>
                         <span v-else>{{ line[column.field] }}</span>
                     </td>
@@ -39,7 +39,7 @@
 <script>
 import $ from 'jquery';
 export default {
-    name:'OfferesTableCmp',
+    name:'OffersTableCmp',
     props:["lines","columns"],
     data(){
         return{

@@ -8,7 +8,7 @@
 
 <script>
 import Navbar from '@/components/Navbar/NavbarCmp.vue';
-import SignUp from '@/components/Home/SignUpCmp.vue'
+import SignUp from '@/components/SignUpCmp.vue'
 import Footer from '@/components/Footer/FooterCmp.vue';
 import ScrollUp from '@/components/ScrollUpCmp.vue';
 export default {
