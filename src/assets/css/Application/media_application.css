@@ -2,12 +2,22 @@
     .application_back{
         padding: 30px 0px;
     } 
+    .application_input{
+        width:-webkit-fill-available;
+        max-width: 700px;
+    }
+    .applcation_footer{
+        width: -webkit-fill-available;
+    }
 }
 @media screen and (max-width: 990px) {
     .application_header{
         padding: 20px;
         width:100%;
     }
+    .application_input{
+        max-width: 600px;
+    }    
 }
 @media screen and (max-width: 860px) {
     .application_header{
@@ -20,6 +30,9 @@
     .application_title {
         font-size: 2rem;
     }
+    .application_input{
+        max-width: 500px;
+    }   
 }
 @media screen and (max-width: 773px) {
     .application_body {
@@ -27,12 +40,6 @@
     }
     .application_box {
         padding: 10px 0;
-    }
-    .application_input{
-        width:inherit;
-    }
-    .applcation_footer{
-        width: inherit;
     }
 }
 @media screen and (max-width: 598px) {

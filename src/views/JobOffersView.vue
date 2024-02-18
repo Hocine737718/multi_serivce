@@ -15,16 +15,17 @@ export default {
     components:{OfferesTableCmp},
     data(){
         return {
-            lines:[
-                { id:  1, title: 'Développeur Web', clicks: 200, link: '/offres/drh' },  
-                { id:  2, title: 'Directeur des Ressources Humaines', clicks: 100, link: '/offres/drh' },
-            ],
             columns:[ 
                 { title: 'ID', field: 'id' },
                 { title: 'Titre', field: 'title' },
                 { title: 'Clics', field: 'clicks' }
             ]
         }        
+    },
+    computed:{
+        lines(){
+            return this.$store.state.offers;
+        }
     }
 }
 </script>

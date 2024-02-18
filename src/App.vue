@@ -12,6 +12,9 @@ import SignUp from '@/components/Home/SignUpCmp.vue'
 import Footer from '@/components/Footer/FooterCmp.vue';
 import ScrollUp from '@/components/ScrollUpCmp.vue';
 export default {
-  components:{Navbar,SignUp,Footer,ScrollUp}
+  components:{Navbar,SignUp,Footer,ScrollUp},
+  beforeMount(){
+    this.$store.dispatch('get_offers');
+  }
 }
 </script>

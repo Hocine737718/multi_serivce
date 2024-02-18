@@ -1,10 +1,10 @@
 <template>
     <div class="home_signup" id="home_signup">
         <h1>Inscrivez vous à la newsletter</h1>
-        <form :action="actionURL" method="POST" class="signup_form" >
+        <form @submit.prevent="action" method="POST" class="signup_form" >
             <div class="signup_box">
                 <i class="ri-mail-fill"></i>
-                <input class="signup_input" type="email" name="email" value="" placeholder="Entrer votre adresse e-mail">
+                <input class="signup_input" type="email" name="email" v-model="this.email" placeholder="Entrer votre adresse e-mail">
                 <button class="signup_btn" type="submit" name="button">Valider</button>
             </div>
         </form>
@@ -14,10 +14,14 @@
 <script>
 export default {
     name: 'SignUpCmp',
-    props:['baseURL'],
     data(){
         return{
-            actionURL:`${this.baseURL}/mail.php`
+            email:""
+        }
+    },
+    methods:{
+        async action(){
+            if(this.email!="") this.$store.dispatch('addToNewsLetter',this.email);
         }
     }
 }

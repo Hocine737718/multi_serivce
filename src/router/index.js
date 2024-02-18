@@ -15,8 +15,10 @@ import AdminRhView from '@/views/Articles/AdminRhView.vue'
 import CounselView from '@/views/Articles/CounselView.vue'
 import StatisticsView from '@/views/StatisticsView.vue'
 import ApplicationFormView from '@/views/ApplicationFormView.vue'
-import JobOfferesView from '@/views/JobOfferesView.vue'
+import JobOffersView from '@/views/JobOffersView.vue'
 import ContactView from '@/views/ContactView.vue'
+import DrhView from '@/views/Articles/Offers/DrhView.vue'
+import QuoteView from '@/views/QuoteView.vue'
 import ErrorView from '@/views/ErrorView.vue'
 const routes = [
   {
@@ -102,17 +104,22 @@ const routes = [
   {
     path: '/offres-emploi',
     name: 'offres-emploi',
-    component: JobOfferesView
+    component: JobOffersView
   },
   {
     path: '/offres/drh',
     name: '/offres/drh',
-    component: JobOfferesView
+    component: DrhView
   },
   {
     path: '/contact',
     name: '/contact',
     component: ContactView
+  },
+  {
+    path: '/devis',
+    name: '/devis',
+    component: QuoteView
   },
   {
     path : '/:catchAll(.*)',

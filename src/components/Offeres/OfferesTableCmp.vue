@@ -27,7 +27,7 @@
                 </tr>
                 <tr v-for="line in lineSet" :key="line.id">
                     <td class="offeres_td" v-for="column in columns" :key="column.field">
-                        <a v-if="column.field=='title'" :href="line['link']" class="offeres_link">{{ line[column.field] }}</a>
+                        <a v-if="column.field=='title'" :href="line['link']" class="offeres_link" @click="click">{{ line[column.field] }}</a>
                         <span v-else-if="column.field=='clicks'" class="badge">{{ line[column.field] }}</span>
                         <span v-else>{{ line[column.field] }}</span>
                     </td>
@@ -92,6 +92,9 @@ export default {
                 });
                 head.classList.toggle('desc', this.sortOrder==="desc" );
             }
+        },
+        async click(){
+            this.$store.dispatch('add_click',2);  
         }        
     }
 }

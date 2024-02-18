@@ -22,13 +22,14 @@ import './assets/css/Statistics/statistics.css'
 import './assets/css/Statistics/media_statistics.css'
 import './assets/css/Application/application.css'
 import './assets/css/Application/media_application.css'
-import './assets/css/Offeres/offeres.css'
-import './assets/css/Offeres/media_offeres.css'
+import './assets/css/Offers/offers.css'
+import './assets/css/Offers/media_offers.css'
 import './assets/css/Contact/contact.css'
 import './assets/css/Contact/media_contact.css'
 import './assets/css/Error/error.css'
 import './assets/css/Error/media_error.css'
 import './assets/css/ScrollUp/scrollup.css'
+import store from './store'
 
 
-createApp(App).use(router).use(CanvasJSStockChart).mount('#app')
+createApp(App).use(store).use(router).use(CanvasJSStockChart).mount('#app')

@@ -106,3 +106,6 @@
 .applcation_footer button:hover{
     background-color: var(--first-color-light);
 }
+.select{
+    font-size: 0.75rem;
+}
