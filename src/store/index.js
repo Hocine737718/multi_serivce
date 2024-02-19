@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 export default createStore({
   state: {
     //baseURL: "http://localhost:80/server/MULTI_SERVICES/_php",http://php-multi-service.42web.io/
-    baseURL: "http://php-multi-service.42web.io",
+    baseURL: "http://test-php.mooo.com/php",
     offers:[]
   },
   getters: {

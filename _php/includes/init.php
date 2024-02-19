@@ -6,7 +6,8 @@
 	header('Access-Control-Allow-Headers: Content-Type');  // Add any additional headers your API supports
 	// PDO
 	try {
-		$pdo = new PDO("mysql:host=sql112.infinityfree.com;dbname=if0_36006183_gms_db;charset=utf8mb4", "if0_36006183", "pRFTuFEx");
+		//$pdo = new PDO("mysql:host=sql112.infinityfree.com;dbname=if0_36006183_gms_db;charset=utf8mb4", "if0_36006183", "pRFTuFEx");
+		$pdo = new PDO("mysql:host=localhost;dbname=gms_db;charset=utf8mb4", "root", "");
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$stmt='';
 		$num_rows='';
