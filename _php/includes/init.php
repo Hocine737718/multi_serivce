@@ -1,12 +1,12 @@
 <?php
 	// Set the content type to JSON
 	header('Content-Type: application/json');
-	header('Access-Control-Allow-Origin: *');  // Replace with the origin of your Vue.js app
+	header('Access-Control-Allow-Origin:  http://localhost:8080');  // Replace with the origin of your Vue.js app
 	header('Access-Control-Allow-Methods: POST, OPTIONS'); // Add any additional methods your API supports
 	header('Access-Control-Allow-Headers: Content-Type');  // Add any additional headers your API supports
 	// PDO
 	try {
-		$pdo = new PDO("mysql:host=localhost;dbname=gms_db;charset=utf8mb4", "root", "");
+		$pdo = new PDO("mysql:host=sql112.infinityfree.com;dbname=if0_36006183_gms_db;charset=utf8mb4", "if0_36006183", "pRFTuFEx");
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$stmt='';
 		$num_rows='';
