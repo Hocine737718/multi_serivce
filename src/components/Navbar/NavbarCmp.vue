@@ -41,9 +41,10 @@
           </div>
           <ul class="dropdown_menu">
             <li class="dropdown_subitem">
-              <a href="/article/conseil" class="dropdown_link">
-                Conseil <i class="ri-add-line dropdown_add"></i>
-              </a>
+              <div class="dropdown_link">
+                <a href="/article/conseil">Conseil</a>
+                <i class="ri-add-line dropdown_add"></i>
+              </div>
               <ul class="dropdown_submenu">
                 <li>
                   <a href="/article/droit-travail" class="dropdown_sublink">
@@ -69,9 +70,10 @@
             </li>
 
             <li class="dropdown_subitem">
-              <a href="/article/audit-rh" class="dropdown_link">
-                Audit de l'administration RH  <i class="ri-add-line dropdown_add"></i>
-              </a>
+              <div class="dropdown_link">
+                <a href="/article/audit-rh">Audit de l'administration RH</a>  
+                <i class="ri-add-line dropdown_add"></i>
+              </div>
               <ul class="dropdown_submenu">
                 <li>
                   <a href="/article/audit-conformite" class="dropdown_sublink">
@@ -82,10 +84,10 @@
             </li>
 
             <li class="dropdown_subitem">
-              <a href="/article/admin-rh" class="dropdown_link">
-                Administration RH 
+              <div class="dropdown_link">
+                <a href="/article/admin-rh">Administration RH </a>
                 <i class="ri-add-line dropdown_add"></i> 
-              </a>
+              </div>
               <ul class="dropdown_submenu">
                 <li>
                   <a href="/article/gestion-personnel" class="dropdown_sublink">
@@ -187,6 +189,24 @@ export default {
       })
     };
     showMenu('nav-toggle','nav-menu');
+
+    Array.from(document.getElementsByClassName('dropdown_add')).forEach(e => {
+        e.addEventListener('click', () => {
+            console.log("subItem=",e.parentNode.classList.toString());
+            const subItem = e.parentNode.parentNode;
+
+            Array.from(document.getElementsByClassName('dropdown_subitem')).forEach(item=>{
+              if(item!=subItem) item.classList.remove('active_dp');
+            });
+            
+            if (!subItem.classList.contains('active_dp')) {
+                subItem.classList.add('active_dp');   
+            } 
+            else {
+                subItem.classList.remove('active_dp');   
+            }
+        });
+    });
   }
 }
 </script>

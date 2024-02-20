@@ -125,8 +125,16 @@ nav {
     transition: max-height .4s ease-out;
     min-width: 250px;
 }
-.dropdown_item:hover .dropdown_menu, 
+/*.dropdown_item:hover .dropdown_menu, 
 .dropdown_subitem:hover > .dropdown_submenu {
+    max-height: 1000px;
+    transition: max-height .4s ease-in;
+}*/
+.dropdown_item:hover .dropdown_menu{
+    max-height: 1000px;
+    transition: max-height .4s ease-in;
+}
+.dropdown_subitem.active_dp .dropdown_submenu {
     max-height: 1000px;
     transition: max-height .4s ease-in;
 }

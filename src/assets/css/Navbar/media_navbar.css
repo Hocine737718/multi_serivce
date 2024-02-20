@@ -81,8 +81,14 @@
       transition: top .3s;
     }
   
-    /* Show dropdown submenu */
+    /* Show dropdown submenu 
     .dropdown_subitem:hover > .dropdown_submenu {
+      opacity: 1;
+      top: 0;
+      pointer-events: initial;
+      transition: top .3s;
+    }*/
+    .dropdown_subitem.active_dp .dropdown_submenu {
       opacity: 1;
       top: 0;
       pointer-events: initial;
