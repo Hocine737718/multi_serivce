@@ -95,6 +95,14 @@ export default {
                 this.selected_file = file;
             });
         },
+        reset(){
+            this.name="";
+            this.email="";
+            this.phone="";
+            this.job="";
+            this.message="";
+            this.selected_file="";
+        },
         action(){
             this.name=this.name.trim();
             this.email=this.email.trim();
@@ -106,7 +114,7 @@ export default {
             {
                 var data={name:this.name,email:this.email,phone:this.phone,job:this.job,message:this.message};
                 this.$store.dispatch('job_application',{data:data,file:this.selected_file});
-                location.reload();
+                this.reset();
             }
             else if(!validateEmail(this.email))
             {

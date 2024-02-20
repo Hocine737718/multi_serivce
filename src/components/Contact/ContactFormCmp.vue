@@ -26,9 +26,16 @@ export default {
     }
   },
   methods:{
+        reset(){
+            this.name="";
+            this.email="";
+            this.message="";
+        }, 
         async action(){
-            if(this.name!="" && this.email!="" && this.message!="" ) 
+            if(this.name!="" && this.email!="" && this.message!="" ){
               this.$store.dispatch('contact',{name:this.name,email:this.email,message:this.message});
+              this.reset();
+            }
         }
     }    
 }

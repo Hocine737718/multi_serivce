@@ -52,9 +52,9 @@ export async function handleFileChange(event){
       else if(selected_file.size> maxSizeInBytes)
       {
         Swal.fire({
-          icon: "error",title: "Erreur",text: "Ne dépasse pas 25 Mo !",
+          icon: "error",title: "Erreur",text: "Ne dépasse pas 20 Mo !",
         }); 
-        throw new Error("Ne dépasse pas 25 Mo !");
+        throw new Error("Ne dépasse pas 20 Mo !");
       }
       console.log('selected1',selected_file);
       return selected_file;
