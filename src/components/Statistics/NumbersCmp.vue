@@ -1,32 +1,26 @@
 <template>
   <div class="statistics_chart">
-    <CanvasJSChart :options="options"  :styles="styleOptions"/>
+    <CanvasJSChart :options="options"  :styles="styleOptions" @chart-ref="chartRef"/>
   </div>
 </template>
 <script>
-
+import {generateColors} from '@/assets/js/global.js';
 export default {
     name:'NumbersCmp',
     data() {
       return {
+        chart: null,
         options: {
           theme: "light2",
           animationEnabled: true,
           backgroundColor: 'rgba(255,255,255,0)',
           data: [{
             type: "pie",
-            indexLabel: "{y/1726}#percent%",
-
             showInLegend: true,
             legendText: "{label}",
             /*yValueFormatString: "#,##0K",*/
-            toolTipContent: "<span style='\"'color: {color};'\"'>{label}</span>: {y} clients",
-            dataPoints: [
-              { label: "CONSEIL", y: 948, color: '#ff9900' },
-              { label: "FORMATION", y: 34, color: '#109618' },
-              { label: "ADMINISTRATION RH", y:  704, color: '#3366cc' },
-              { label: "AUDIT", y:  40, color: '#dc3912' }
-            ]
+            toolTipContent: "<span style='\"'color: {color};'\"'>{label}</span>: {y} services",
+            dataPoints: [],
           }]
         },
         styleOptions: {
@@ -34,6 +28,27 @@ export default {
           height: "100%",
         }
       }
+    },
+    methods:{
+      chartRef(chart) {
+        this.chart = chart;
+      }
+    },
+    async mounted(){
+        await this.$store.dispatch('get_stats', 'services_stats');
+        let nb = this.$store.state.services_stats.service_nb;
+        let colors=generateColors(nb);
+        let stats_labels = this.$store.state.services_stats.type_services;
+        let stats_y = this.$store.state.services_stats.values;
+        for (let e in stats_labels) {
+          this.chart.options.data[0].dataPoints.push({
+            label: stats_labels[e],
+            y: stats_y[stats_labels[e]],
+            color: colors[e]
+          });
+        }
+        this.chart.render();
     }
+
 }
 </script>

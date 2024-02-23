@@ -94,7 +94,7 @@ const routes = [
   {
     path: '/statistiques',
     name: 'statistiques',
-    component: StatisticsView
+    component: StatisticsView,
   },
   {
     path: '/candidature-spontanee',

@@ -1,13 +1,15 @@
 <template>
   <div class="statistics_chart">
-    <CanvasJSChart :options="options"  :styles="styleOptions"/>
+    <CanvasJSChart :options="options"  :styles="styleOptions"  @chart-ref="chartRef"/>
   </div>
 </template>
 <script>
+import {generateColors} from '@/assets/js/global.js';
 export default {
     name:'ReferencesCmp',
     data() {
       return {
+        chart: null,
         options: {
           theme: "light2",
           animationEnabled: true,
@@ -20,18 +22,8 @@ export default {
           }],
           data: [{
             type: "doughnut",
-            indexLabel: "{label} {y/24}(#percent%)",
             toolTipContent: "<span style='\"'color: {color};'\"'>{label}</span>: {y} clients",
-            dataPoints: [
-              { label: "BTPH", y: 5, color: '#3366cc' },
-              { label: "Pharmaceutique", y: 4, color: '#dc3912' },
-              { label: "Télécommunication", y:  2, color: '#ff9900' },
-              { label: "Transport maritime conteneurisé", y:  2, color: '#109618' },
-              { label: "Services", y: 6, color: '#990099'},
-              { label: "Agroalimentaire", y: 2, color:  '#0099c6' },
-              { label: "Équipements électriques", y: 1, color: '#dd4477' },
-              { label: "Industrie des matériaux de construction", y: 2, color: '#66aa00'}
-            ]
+            dataPoints: []
           }]
         },
         styleOptions: {
@@ -40,6 +32,27 @@ export default {
           margin:"auto"
         }
       }
+    },
+    methods:{
+      chartRef(chart) {
+        this.chart = chart;
+      }
+    },
+    async mounted(){
+        await this.$store.dispatch('get_stats', 'line_business_stats');
+        let nb = this.$store.state.line_business_stats.line_business_nb;
+        this.chart.options.data[0].indexLabel=`{label} {y/${nb}}(#percent%)`;
+        let colors=generateColors(nb);
+        let stats_labels = this.$store.state.line_business_stats.names;
+        let stats_y = this.$store.state.line_business_stats.values;
+        for (let e in stats_labels) {
+            this.chart.options.data[0].dataPoints.push({
+            label: stats_labels[e],
+            y: stats_y[stats_labels[e]],
+            color: colors[e]
+            });
+        }
+        this.chart.render();
     }
 }
 </script>

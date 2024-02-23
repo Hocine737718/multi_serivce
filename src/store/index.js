@@ -5,14 +5,21 @@ import Swal from 'sweetalert2';
 
 export default createStore({
   state: {
+    //baseURL: "http://localhost/server/multi_services/_php",
     baseURL: "https://gms-php.000webhostapp.com/_php",
-    offers:[]
+    offers:[],
+    line_business_stats:[],
+    services_stats:[]
   },
   getters: {
   },
   mutations: {
     set_offers(state, offers) {
       state.offers = offers;
+    },
+    set_stats(state,{stats, stats_name} ) {
+      if(stats_name=="line_business_stats") state.line_business_stats=stats;
+      if(stats_name=="services_stats") state.services_stats=stats;
     },
   },
   actions: {
@@ -134,6 +141,20 @@ export default createStore({
         });
       }  
     },
+
+    async get_stats(context,stats_name){
+      const dataLabel=stats_name;
+      const dataContent="";
+      const serverUrl=`${context.state.baseURL}/${stats_name}.php`;
+      const res=await useAxios(dataLabel,dataContent,serverUrl);
+      if(!res.error){                
+        console.log("Stats - "+stats_name+"-> ",res.msg);
+        context.commit('set_stats',{ stats:res.data, stats_name:stats_name});
+      }
+      else{
+        console.error("Stats - "+stats_name+"-> ",res.msg);
+      }       
+    },  
 
     async download(context,filename){
       const serverUrl=`${context.state.baseURL}/download.php?filename=${filename}`;

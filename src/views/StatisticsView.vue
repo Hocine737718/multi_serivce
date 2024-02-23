@@ -15,7 +15,7 @@
                 GMS EN CHIFFRES
             </div>
             <div class="statistics_body">
-                <Numbers/>
+                <Numbers />
             </div>
         </div>
         </span>

@@ -2,7 +2,7 @@
 	include 'includes/init.php';
 	if(isset($_POST['get_offers']))
 	{
-        preparerRequete("SELECT id,title,clicks,link  FROM job_offers WHERE available=1");
+        preparerRequete("SELECT id,title,clicks,link  FROM job_offers WHERE is_deleted=0");
 		$rows=executeRequete();
 		if($num_rows > 0){
             $offers=array();
