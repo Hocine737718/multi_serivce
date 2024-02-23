@@ -192,7 +192,6 @@ export default {
 
     Array.from(document.getElementsByClassName('dropdown_add')).forEach(e => {
         e.addEventListener('click', () => {
-            console.log("subItem=",e.parentNode.classList.toString());
             const subItem = e.parentNode.parentNode;
 
             Array.from(document.getElementsByClassName('dropdown_subitem')).forEach(item=>{

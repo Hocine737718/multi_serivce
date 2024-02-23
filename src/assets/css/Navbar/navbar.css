@@ -138,6 +138,9 @@ nav {
     max-height: 1000px;
     transition: max-height .4s ease-in;
 }
+.dropdown_subitem.active_dp .dropdown_add {
+    transform: rotate(45deg);
+}
 .dropdown_item:hover .dropdown_arrow {
     transform: rotate(180deg);
 }
