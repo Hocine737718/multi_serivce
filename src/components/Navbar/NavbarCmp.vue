@@ -71,20 +71,6 @@
 
             <li class="dropdown_subitem">
               <div class="dropdown_link">
-                <a href="/article/audit-rh">Audit de l'administration RH</a>  
-                <i class="ri-add-line dropdown_add"></i>
-              </div>
-              <ul class="dropdown_submenu">
-                <li>
-                  <a href="/article/audit-conformite" class="dropdown_sublink">
-                    Audit de conformité et d’efficacité
-                  </a>
-                </li>
-              </ul>  
-            </li>
-
-            <li class="dropdown_subitem">
-              <div class="dropdown_link">
                 <a href="/article/admin-rh">Administration RH </a>
                 <i class="ri-add-line dropdown_add"></i> 
               </div>
@@ -110,6 +96,20 @@
                   </a>
                 </li>
               </ul> 
+            </li>
+
+            <li class="dropdown_subitem">
+              <div class="dropdown_link">
+                <a href="/article/audit-rh">Audit de l'administration RH</a>  
+                <i class="ri-add-line dropdown_add"></i>
+              </div>
+              <ul class="dropdown_submenu">
+                <li>
+                  <a href="/article/audit-conformite" class="dropdown_sublink">
+                    Audit de conformité et d’efficacité
+                  </a>
+                </li>
+              </ul>  
             </li>
 
             <li class="dropdown_subitem">

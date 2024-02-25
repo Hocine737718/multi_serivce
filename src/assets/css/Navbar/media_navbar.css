@@ -1,23 +1,21 @@
 @media screen and (max-width: 425px) {
   .nav_logo img {
-    width: 120px;
+    width: 130px;
+  }
+  .container {
+    margin-inline: 3px;
   }
 }
 @media screen and (max-width: 340px) {
-  .nav .container {
-      margin-inline: 1rem;
-    }
-  
     .nav_link {
       padding-inline: 1rem;
     }
 }
   
 @media screen and (min-width: 1170px) {
-   .nav .container {
+    .container {
       margin-inline: auto;
     }
-  
     .nav {
       height: var(--header-height);
       display: flex;
